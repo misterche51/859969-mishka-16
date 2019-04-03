@@ -5,28 +5,32 @@
     <title>MISHKA - каталог</title>
   </head>
   <body>
-    <header class="page-header">
-        <a href="index.html" class="page-header__logo">
+    <header class="header">
+        <a href="index.html" class="header__logo">
             <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="page-header__logo-image" width="86" height="35">
         </a>
         <button class="menu-button"></button>
-        <!-- <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">Каталог товаров</li>
-                <li class="site-list__item">Вязание на заказ</li>
-            </ul>
-            <ul class="main-nav__list user-list">
-                <li class="user-list__item">
-                    <input type="search" class="user-list__search" name="" id="">
+        <nav class="nav">
+            <ul class="nav__list"></ul>
+                <li class="nav__item">
+                    <a href="catalog.html" class="nav__link">Каталог товаров</a>
                 </li>
-                <li class="user-list__item">
-                    <a href="" class="user-list__cart">Корзина</a>
+                <li class="nav__item">
+                    <a href="form.html" class="nav__link">Вязание на заказ</a>
+                </li>
+                <li class="nav__item nav-item"> 
+                    <!-- вот тут за этот микс и вообще за всю структуру вместе с классами я очень не уверен -->
+                    <label class="nav-item__label" for="search">Поиск по сайту</label>
+                    <input type="search" class="nav-item__search" name="search" id="search">
+                </li>
+                <li class="nav__item nav-item">
+                    <a href="" class="nav__link nav__link--cart">Корзина</a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
-    <main class="catalog-main">
-        <h1 class="page-main__title">Каталог товаров</h1>
+    <main class="main">
+        <h1 class="main__title">Каталог товаров</h1>
         <ul class="catalog__list">
             <li class="catalog__item item">
                 <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="item__photo" width="260" height="195">
@@ -54,7 +58,7 @@
             </li>
         </ul>
     </main>
-    <footer class="page-footer">
+    <footer class="footer">
         <ul class="social__list">
             <li class="social__item">
                 <a href="" class="social__link">
