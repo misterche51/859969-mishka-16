@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="header__logo">
         <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="page-header__logo-image" width="86" height="35">
       </a>
-      <button class="menu-button"></button>
+      <button class="header__toggle-button"></button>
       <nav class="nav">
         <ul class="nav__list"></ul>
           <li class="nav__item">
@@ -18,20 +18,15 @@
           <li class="nav__item">
             <a href="form.html" class="nav__link">Вязание на заказ</a>
           </li>
-          <li class="nav__item nav-item">
-          <!-- вот тут за этот микс и вообще за всю структуру вместе с классами я очень не уверен -->
-            <label class="nav-item__label" for="search">Поиск по сайту</label>
-            <input type="search" class="nav-item__search" name="search" id="search">
-          </li>
-          <li class="nav__item nav-item">
-            <a href="" class="nav__link nav__link--cart">Корзина</a>
-          </li>
         </ul>
+        <label class="nav__item nav__item--search" for="search">Поиск по сайту</label>
+        <input type="search" class="nav__search" name="search" id="search">
+        <a href="" class="nav__item nav__item--cart">Корзина</a>
       </nav>
     </header>
     <main class="main">
       <h1 class="main__title">Вязание на заказ</h1>
-      <p class="description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form">
         <fieldset class="form__fieldset">
           <legend class="form__legend">Тип</legend>
@@ -81,28 +76,28 @@
       </form>
     </main>
     <footer class="footer">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="social__link-image" width="15" height="28">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="social__link-image" width="23" height="20">
-          </a>
-        </li>
+      <ul class="social">
+          <li class="social__item">
+              <a href="" class="social__link">
+                  <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
+              </a>
+          </li>
+          <li class="social__item">
+              <a href="" class="social__link">
+                  <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="social__link-image" width="15" height="28">
+              </a>
+          </li>
+          <li class="social__item">
+              <a href="" class="social__link">
+                  <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="social__link-image" width="23" height="20">
+              </a>
+          </li>
       </ul>
       <p class="copyright">
-        <span class="copyright__title">Разработано</span>
-        <a href="" class="copyright__link">
-          <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__link-image" width="27" height="34">
-        </a>
+          <span class="copyright__title">Разработано</span>
+          <a href="" class="copyright__link">
+              <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__link-image" width="27" height="34">
+          </a>
       </p>
     </footer>
   </body>

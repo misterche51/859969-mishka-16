@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="header__logo">
         <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="page-header__logo-image" width="86" height="35">
       </a>
-      <button class="menu-button"></button>
+      <button class="header__toggle-button"></button>
       <nav class="nav">
         <ul class="nav__list"></ul>
           <li class="nav__item">
@@ -18,21 +18,16 @@
           <li class="nav__item">
             <a href="form.html" class="nav__link">Вязание на заказ</a>
           </li>
-          <li class="nav__item nav-item">
-          <!-- вот тут за этот микс и вообще за всю структуру вместе с классами я очень не уверен -->
-            <label class="nav-item__label" for="search">Поиск по сайту</label>
-            <input type="search" class="nav-item__search" name="search" id="search">
-          </li>
-          <li class="nav__item nav-item">
-            <a href="" class="nav__link nav__link--cart">Корзина</a>
-          </li>
         </ul>
+        <label class="nav__item nav__item--search" for="search">Поиск по сайту</label>
+        <input type="search" class="nav__search" name="search" id="search">
+        <a href="" class="nav__item nav__item--cart">Корзина</a>
       </nav>
     </header>
     <main class="main">
         <h1 class="main__title">Каталог товаров</h1>
-        <ul class="catalog__list">
-          <li class="catalog__item item">
+        <ul class="catalog">
+          <li class="catalog__item">
             <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="item__photo" width="260" height="195">
             <p class="item__info">
               <h2 class="item__name">Зайчик-попрыгайчик</h2>
@@ -40,7 +35,7 @@
             </p>
               <span class="item__price">1 200 руб.</span>
             </li>
-            <li class="catalog__item item">
+            <li class="catalog__item">
                 <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="item__photo" width="260" height="195">
                 <p class="item__info">
                     <h2 class="item__name">Корзинка для белья</h2>
@@ -48,7 +43,7 @@
                 </p>
                 <span class="item__price">690 руб.</span>
             </li>
-            <li class="catalog__item item">
+            <li class="catalog__item">
                 <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="item__photo" width="260" height="195">
                 <p class="item__info">
                     <h2 class="item__name">Большая корзинка для игрушек</h2>
@@ -59,7 +54,7 @@
         </ul>
     </main>
     <footer class="footer">
-        <ul class="social__list">
+        <ul class="social">
             <li class="social__item">
                 <a href="" class="social__link">
                     <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
