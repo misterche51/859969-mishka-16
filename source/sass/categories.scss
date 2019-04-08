@@ -5,19 +5,22 @@
   margin-top: -60px;
   padding: 0;
 }
+
 .categories__item {
   padding: 30px;
 }
+
 .categories__item--decor {
   background-color: $seafoam;
 }
+
 .categories__item--kids {
   background-color: $greenyblue;
 }
 
 .categories__link {
   text-decoration: none;
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: $ultrawhite;

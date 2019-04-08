@@ -1,5 +1,5 @@
 .button {
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 17px;
@@ -8,5 +8,5 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: inset 0px 0px 0px 2px $greyish;
+  box-shadow: inset 2px $greyish;
 }

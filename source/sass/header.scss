@@ -1,5 +1,3 @@
-// @import "variables.scss";
-
 .header {
   background-color: $white;
 }
@@ -17,7 +15,7 @@
 
 .nav__link {
   text-decoration: none;
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: $black;
@@ -25,10 +23,8 @@
 
 .nav__item {
   text-decoration: none;
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: $black;
 }
-
-

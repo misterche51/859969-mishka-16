@@ -4,14 +4,14 @@
 }
 
 .catalog__title {
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 26.5px;
   line-height: 29.5px;
   color: $verydarkbrown;
 }
 
 .catalog__item {
-  box-shadow: inset 0px 0px 0px 1px $white;
+  box-shadow: inset 1px $white;
 }
 
 .item__info {
@@ -21,21 +21,21 @@
 }
 
 .item__name {
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: $black;
 }
 
 .item__params {
-  font-family: OpenSans, sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 13px;
   line-height: 30px;
   color: $greyish;
 }
 
 .item__price {
-  font-family: OpenSansBold, sans-serif;
+  font-family: "OpenSansBold", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: $black;
