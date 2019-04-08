@@ -1,0 +1,34 @@
+// @import "variables.scss";
+
+.header {
+  background-color: $white;
+}
+
+.header__toggle-button {
+  width: 100px;
+  height: 20px;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.nav__item {
+  text-decoration: none;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+

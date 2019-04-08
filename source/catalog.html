@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>MISHKA - каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="page-header__logo-image" width="86" height="35">
+        <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="header__logo-image" width="86" height="35">
       </a>
       <button class="header__toggle-button"></button>
       <nav class="nav">
-        <ul class="nav__list"></ul>
+        <ul class="nav__list">
           <li class="nav__item">
             <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
@@ -24,34 +25,36 @@
         <a href="" class="nav__item nav__item--cart">Корзина</a>
       </nav>
     </header>
-    <main class="main">
-        <h1 class="main__title">Каталог товаров</h1>
-        <ul class="catalog">
-          <li class="catalog__item">
-            <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="item__photo" width="260" height="195">
-            <p class="item__info">
-              <h2 class="item__name">Зайчик-попрыгайчик</h2>
-              <span class="item__params">Рост 30 см, вес 200 г</span>
-            </p>
-              <span class="item__price">1 200 руб.</span>
-            </li>
-            <li class="catalog__item">
-                <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="item__photo" width="260" height="195">
-                <p class="item__info">
-                    <h2 class="item__name">Корзинка для белья</h2>
-                    <span class="item__params">Диаметр 15 см, высота 10 см</span>
-                </p>
-                <span class="item__price">690 руб.</span>
-            </li>
-            <li class="catalog__item">
-                <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="item__photo" width="260" height="195">
-                <p class="item__info">
-                    <h2 class="item__name">Большая корзинка для игрушек</h2>
-                    <span class="item__params">Диаметр 30 см, высота 30 см</span>
-                </p>
-                <span class="item__price">1 500 руб.</span>
-            </li>
-        </ul>
+    <main class="catalog">
+      <div class="catalog__header">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
+      <section class="catalog__list">
+        <div class="catalog__item">
+          <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="item__photo" width="260" height="195">
+          <div class="item__info">
+            <h2 class="item__name">Зайчик-попрыгайчик</h2>
+            <span class="item__params">Рост 30 см, вес 200 г</span>
+          </div>
+          <span class="item__price">1 200 руб.</span>
+        </div>
+          <div class="catalog__item">
+            <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="item__photo" width="260" height="195">
+            <div class="item__info">
+              <h2 class="item__name">Корзинка для белья</h2>
+              <span class="item__params">Диаметр 15 см, высота 10 см</span>
+            </div>
+            <span class="item__price">690 руб.</span>
+          </div>
+          <div class="catalog__item">
+            <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="item__photo" width="260" height="195">
+            <div class="item__info">
+              <h2 class="item__name">Большая корзинка для игрушек</h2>
+              <span class="item__params">Диаметр 30 см, высота 30 см</span>
+            </div>
+            <span class="item__price">1 500 руб.</span>
+          </div>
+        </section>
     </main>
     <footer class="footer">
         <ul class="social">

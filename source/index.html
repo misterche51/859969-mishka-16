@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>MISHKA - изделия ручной работы для дома</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="page-header__logo-image" width="86" height="35">
+        <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="header__logo-image" width="86" height="35">
       </a>
       <button class="header__toggle-button"></button>
       <nav class="nav">
-        <ul class="nav__list"></ul>
+        <ul class="nav__list">
           <li class="nav__item">
             <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
@@ -25,7 +26,9 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+      <div class="main__header">
+        <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <nav class="main__nav">
         <ul class="categories">
           <li class="categories__item categories__item--decor">
@@ -37,26 +40,28 @@
         </ul>
       </nav>
       <section class="main__section promo">
-        <h2 class="promo__title title">Вязаные корзинки</h2>
-          <b class="promo__label">Товар недели</b>
-          <p class="text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветка, и трех размерах</p>
-          <table class="promo__table table">
-            <tr class="table__row">
-              <td class="row__title">Цвет:</td>
-              <td class="row__value">Тиффани/серый</td>
-            </tr>
-            <tr class="table__row">
-              <td class="row__title">Диаметр:</td>
-              <td class="row__value">25 см</td>
-            </tr>
-            <tr class="table__row">
-              <td class="row__title">Высота:</td>
-              <td class="row__value">15 см</td>
-            </tr>
-          </table>
-          <img src="http://placehold.it/260x315" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" class="promo__image" width="260" height="315">
-          <span class="promo__price">Цена: 990 руб.</span>
-          <a href="" class="promo__buy button">Заказать</a>
+        <div class="promo__header">
+            <h2 class="promo__title title">Вязаные корзинки</h2>
+            <b class="promo__label">Товар недели</b>
+            <p class="text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветка, и трех размерах</p>
+        </div>
+        <table class="promo__table table">
+          <tr class="table__row">
+            <td class="row__title">Цвет:</td>
+            <td class="row__value">Тиффани/серый</td>
+          </tr>
+          <tr class="table__row">
+            <td class="row__title">Диаметр:</td>
+            <td class="row__value">25 см</td>
+          </tr>
+          <tr class="table__row">
+            <td class="row__title">Высота:</td>
+            <td class="row__value">15 см</td>
+          </tr>
+        </table>
+        <img src="http://placehold.it/260x315" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" class="promo__image" width="260" height="315">
+        <span class="promo__price">Цена: 990 руб.</span>
+        <a href="" class="promo__buy button">Заказать</a>
       </section>
       <section class="main__section about">
         <h2 class="about__title title">Коротко о нас</h2>
@@ -86,11 +91,11 @@
           <h3 class="contacts__title title">Контакты</h3>
           <p class="contacts__item">
             <span class="contacts__type">e-mail:</span>
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </p>
           <p class="contacts__item">
             <span class="contacts__type">адрес:</span>
-            <address>г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</address>
+            <address class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</address>
           </p>
           <img src="http://placehold.it/320x457" alt="Мы на карте Москвы" class="contacts__map" width="320" height="457">
           <a href="" class="contacts__feedback button">Напишите нам</a>
@@ -98,27 +103,27 @@
     </main>
     <footer class="footer">
       <ul class="social">
-          <li class="social__item">
-              <a href="" class="social__link">
-                  <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
-              </a>
-          </li>
-          <li class="social__item">
-              <a href="" class="social__link">
-                  <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="social__link-image" width="15" height="28">
-              </a>
-          </li>
-          <li class="social__item">
-              <a href="" class="social__link">
-                  <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="social__link-image" width="23" height="20">
-              </a>
-          </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="social__link-image" width="15" height="28">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="social__link-image" width="23" height="20">
+          </a>
+        </li>
       </ul>
       <p class="copyright">
-          <span class="copyright__title">Разработано</span>
-          <a href="" class="copyright__link">
-              <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__link-image" width="27" height="34">
-          </a>
+        <span class="copyright__title">Разработано</span>
+        <a href="" class="copyright__link">
+          <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__link-image" width="27" height="34">
+        </a>
       </p>
     </footer>
   </body>
