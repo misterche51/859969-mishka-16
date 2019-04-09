@@ -2,7 +2,6 @@
   list-style: none;
   background-color: aqua;
   margin: 0;
-  margin-top: -60px;
   padding: 0;
 }
 
@@ -20,8 +19,8 @@
 
 .categories__link {
   text-decoration: none;
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   color: $ultrawhite;
 }

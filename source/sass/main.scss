@@ -1,5 +1,8 @@
 .main {
-  margin-top: -10px;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $greyish;
 }
 
 .main__header {
@@ -9,8 +12,8 @@
 }
 
 .main__title {
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 26.5px;
-  line-height: 29.5px;
+  line-height: 1.1;
   color: $verydarkbrown;
 }
