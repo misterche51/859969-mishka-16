@@ -53,7 +53,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
   .main__promo-nav {
@@ -80,6 +80,7 @@
     line-height: 1.1;
     width: 700px;
   }
+
   .main__nav {
     width: 1050px;
     margin: auto;
@@ -88,8 +89,5 @@
   .main__promo-nav {
     display: flex;
     flex-direction: row;
-  }
-
-  .main__marketing {
   }
 }

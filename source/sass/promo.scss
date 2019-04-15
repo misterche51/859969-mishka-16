@@ -47,8 +47,8 @@
   margin-bottom: 30px;
 }
 
-  .promo__buy {
-    width: 100%;
+.promo__buy {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,6 +92,7 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .promo__customer-info {
     margin-top: auto;
   }
@@ -143,5 +144,4 @@
     width: 525px;
     height: 635px;
   }
-
 }

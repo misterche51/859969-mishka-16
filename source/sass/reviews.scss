@@ -31,13 +31,13 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("");
     background-size: 350px 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
-  .reviews__inner  {
+  .reviews__inner {
     width: 668px;
     margin: auto;
     display: flex;
@@ -51,7 +51,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    order: 3;
   }
+
   .reviews__write {
     align-self: center;
     margin-left: auto;
@@ -60,11 +62,6 @@
   .reviews__list {
     order: 2;
   }
-
-  .reviews__footer {
-    order: 3;
-  }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -73,7 +70,7 @@
     margin: auto;
   }
 
-  .reviews__inner  {
+  .reviews__inner {
     margin-left: 150px;
     width: 875px;
   }
