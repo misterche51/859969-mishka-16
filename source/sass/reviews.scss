@@ -1,7 +1,17 @@
+.reviews {
+  width: 260px;
+  margin: auto;
+}
+
 .reviews__list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.reviews__footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author {
@@ -9,9 +19,62 @@
   font-size: 17px;
   line-height: 1.17;
   color: $black;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-link {
   text-decoration: none;
   color: $greyish;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 100%;
+    background-image: url(../img/review@1x.jpg);
+    background-size: 350px 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reviews__inner  {
+    width: 668px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reviews__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reviews__write {
+    align-self: center;
+    margin-left: auto;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__footer {
+    order: 3;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+    margin: auto;
+  }
+
+  .reviews__inner  {
+    margin-left: 150px;
+    width: 875px;
+  }
 }

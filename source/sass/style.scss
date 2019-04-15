@@ -1,12 +1,11 @@
 // @import "normalize.css";
 @import "variables.scss";
 @import "fonts.scss";
-@import "header.scss";
+@import "button.scss";
 @import "main.scss";
 @import "categories.scss";
 @import "promo.scss";
 @import "table.scss";
-@import "button.scss";
 @import "advantages.scss";
 @import "reviews.scss";
 @import "contacts.scss";
@@ -14,8 +13,8 @@
 @import "copyright.scss";
 @import "catalog.scss";
 @import "title.scss";
+@import "scaffolding.scss";
+@import "header.scss";
+@import "about.scss";
+// @import "button.scss";
 
-
-body {
-  width: 320px;
-}

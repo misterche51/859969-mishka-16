@@ -1,19 +1,95 @@
-.main {
-  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: $greyish;
-}
-
 .main__header {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 50% 0;
+  background-repeat: no-repeat;
   height: 373px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main__title {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 26.5px;
   line-height: 1.1;
+  width: 260px;
+  text-align: center;
   color: $verydarkbrown;
+}
+
+.main__promo {
+  display: none;
+}
+
+.main__promo-nav {
+  width: 350px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main__promo-link {
+  text-decoration: none;
+  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .main__header {
+    width: 668px;
+    margin: auto;
+  }
+
+  .main__title {
+    font-size: 43px;
+    line-height: 1.2;
+    width: 500px;
+  }
+
+  .main__promo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+  }
+
+  .main__promo-nav {
+    display: none;
+  }
+
+  .main__marketing {
+    margin-left: auto;
+  }
+
+  .main__nav {
+    width: 668px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__header {
+    width: 1050px;
+  }
+
+  .main__title {
+    font-size: 53px;
+    line-height: 1.1;
+    width: 700px;
+  }
+  .main__nav {
+    width: 1050px;
+    margin: auto;
+  }
+
+  .main__promo-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main__marketing {
+  }
 }

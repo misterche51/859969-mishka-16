@@ -1,0 +1,14 @@
+body {
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $greyish;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

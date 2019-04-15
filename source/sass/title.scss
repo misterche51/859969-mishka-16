@@ -3,3 +3,9 @@
   line-height: 1.2;
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 43px;
+  }
+}
