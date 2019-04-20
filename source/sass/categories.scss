@@ -22,16 +22,18 @@
 }
 
 .categories__link {
-  text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 19px;
   line-height: 1.3;
   color: $ultrawhite;
+  width: 100%;
+  padding-right: 75%;
 }
 
 @media (min-width: $tablet-width) {
   .categories {
     display: flex;
+    margin: 0 50px;
   }
 
   .categories__item {
