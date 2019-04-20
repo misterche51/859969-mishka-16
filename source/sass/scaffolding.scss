@@ -1,5 +1,12 @@
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
@@ -29,8 +36,8 @@ img {
 }
 
 a {
-   text-decoration: none;
-   cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

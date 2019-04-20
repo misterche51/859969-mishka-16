@@ -22,7 +22,7 @@
   width: 20px;
   height: 15px;
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .nav__list {
@@ -99,6 +99,7 @@
   .nav__item--search {
     width: 83px;
   }
+
   .nav__item--cart {
     width: 264px;
     text-align: right;
@@ -110,7 +111,7 @@
     justify-content: space-between;
   }
 
-  .nav__list,  {
+  .nav__list {
     width: 390px;
   }
 
@@ -120,6 +121,6 @@
 
   .nav__header {
     margin-left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
 }
