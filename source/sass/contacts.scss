@@ -1,3 +1,33 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contacts__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  margin: 40px 0;
+  justify-content: space-between;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .contacts__type {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
@@ -7,9 +37,97 @@
 
 .contacts__value {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 2;
   color: $greyish;
+  margin-left: auto;
+  width: 72%;
+}
+
+.contacts__footer {
+  margin: 0 -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__map {
+  width: 100%;
+}
+
+.contacts__feedback {
+  width: 260px;
+  margin: 40px 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    width: 100%;
+  }
+
+  .contacts__info {
+    width: 100%;
+    min-height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .contacts__item {
+    width: 50%;
+    padding-right: 30px;
+  }
+
+  .contacts__footer {
+    margin: 0 -50px;
+  }
+
+  .contacts__feedback {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__header {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 190px;
+  }
+
+  .contacts__info {
+    flex-direction: column;
+    min-height: 140px;
+  }
+
+  .contacts__item {
+    width: 100%;
+  }
+
+  .contacts__footer {
+    margin: 0;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .contacts__map {
+    height: 460px;
+    width: 50%;
+  }
+
+  .contacts__feedback {
+    margin: 0;
+    margin-left: 150px;
+  }
 }
