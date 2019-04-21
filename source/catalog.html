@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header class="header">
-          <nav class="nav">
-            <a href="index.html" class="nav__logo">
-              <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="header__logo-image" width="86" height="35">
-            </a>
-            <button class="header__toggle-button"></button>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="catalog.html" class="nav__link">Каталог товаров</a>
-              </li>
-              <li class="nav__item">
-                <a href="form.html" class="nav__link">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="nav__user">
-              <li class="nav__item nav__item--search">
-                <a href="" class="nav__link ">Поиск</a>
-              </li>
-              <li class="nav__item nav__item--cart">
-                <a href="" class="nav__link">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </nav>
-      </header>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="index.html" class="nav__logo-link">
+            <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+          </a>
+          <button class="nav__toggle-button"></button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Каталог товаров</a>
+          </li>
+          <li class="nav__item">
+            <a href="form.html" class="nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--user">
+          <li class="nav__item nav__item--search">
+            <a href="" class="nav__link ">Поиск</a>
+          </li>
+          <li class="nav__item nav__item--cart">
+            <a href="" class="nav__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main">
       <div class="main__header">
         <div class="main__promo">
@@ -46,34 +48,45 @@
         </div>
         <h1 class="main__title">Каталог товаров</h1>
       </div>
-      <div class="catalog">
-        <section class="catalog__list">
+      <section class="main__section catalog">
+        <div class="catalog__list">
           <div class="catalog__item">
-            <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__item-photo">
+              <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__item-photo" width="260" height="195">
+            </a>
             <div class="catalog__item-info">
-              <h2 class="catalog__item-name">Зайчик-попрыгайчик</h2>
+              <a href="#" class="catalog__item-link">
+                <h2 class="catalog__item-name">Зайчик-попрыгайчик</h2>
+              </a>
               <span class="catalog__item-params">Рост 30 см, вес 200 г</span>
               <span class="catalog__item-price">1 200 руб.</span>
             </div>
           </div>
           <div class="catalog__item">
-            <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__item-photo">
+              <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="catalog__item-photo" width="260" height="195">
+            </a>
             <div class="catalog__item-info">
-              <h2 class="catalog__item-name">Корзинка для белья</h2>
+              <a href="#" class="catalog__item-link">
+                <h2 class="catalog__item-name">Корзинка для белья</h2>
+              </a>
               <span class="catalog__item-params">Диаметр 15 см, высота 10 см</span>
               <span class="catalog__item-price">690 руб.</span>
             </div>
-
           </div>
           <div class="catalog__item">
-            <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__item-photo">
+              <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__item-photo" width="260" height="195">
+            </a>
             <div class="catalog__item-info">
-              <h2 class="catalog__item-name">Большая корзинка для игрушек</h2>
+              <a href="#" class="catalog__item-link">
+                <h2 class="catalog__item-name">Большая корзинка для игрушек</h2>
+              </a>
               <span class="catalog__item-params">Диаметр 30 см, высота 30 см</span>
               <span class="catalog__item-price">1 500 руб.</span>
             </div>
           </div>
-        </section>
+        </div>
         <section class="catalog__video">
           <h2 class="catalog__video-title title">Процесс производства</h2>
           <div class="catalog__video-content">
@@ -84,35 +97,35 @@
             </div>
           </div>
         </section>
-      </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__inner">
-          <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link">
-                <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="social__link-image" width="22" height="21">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="social__link-image" width="15" height="28">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="social__link-image" width="23" height="20">
-              </a>
-            </li>
-          </ul>
-          <p class="copyright">
-            <span class="copyright__title">Разработано</span>
-            <a href="" class="copyright__link">
-              <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__link-image" width="27" height="34">
+      <div class="footer__inner">
+        <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="footer__social-logo" width="22" height="21">
             </a>
-          </p>
-        </div>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="footer__social-logo" width="15" height="28">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="footer__social-logo" width="23" height="20">
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          <span class="footer__copyright-title">Разработано</span>
+          <a href="" class="footer__copyright-link">
+            <img src="http://placehold.it/27x34" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

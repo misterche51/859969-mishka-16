@@ -1,6 +1,4 @@
 .catalog {
-  width: 260px;
-  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -8,6 +6,7 @@
 .catalog__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .catalog__title {
@@ -76,11 +75,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    width: 668px;
-    margin: auto;
-  }
-
   .catalog__item {
     width: 100%;
     flex-direction: row;
@@ -120,7 +114,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    width: 668px;
+  .catalog__list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 30%;
+    flex-direction: column;
   }
 }

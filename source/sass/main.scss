@@ -46,7 +46,16 @@
   margin-top: auto;
 }
 
+.main__section {
+  width: 100%;
+  padding: 0 30px;
+}
+
 @media (min-width: $tablet-width) {
+  .main__section {
+    padding: 0 50px;
+  }
+
   .main__header {
     width: 100%;
     min-height: 745px;
@@ -59,7 +68,9 @@
   }
 
   .main__promo {
-    min-height: 72px;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 66px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
