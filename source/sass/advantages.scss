@@ -1,3 +1,7 @@
+.advantages__title {
+  margin-bottom: 25px;
+}
+
 .advantages__list {
   width: 100%;
   list-style: none;
@@ -13,21 +17,46 @@
   font-size: 18px;
   line-height: 1.15;
   color: $greyish;
-  height: 40px;
+  min-height: 40px;
   vertical-align: bottom;
-  padding-top: 80px;
+  padding-top: 120px;
   position: relative;
 }
 
 .advantages__item::before {
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 30px;
   display: block;
   content: "";
   width: 48px;
   height: 48px;
-  background-color: $seafoam;
+  // background-color: $seafoam;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--eco::before {
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.advantages__item--scandi::before {
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.advantages__item--likes::before {
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.advantages__item--withlove::before {
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.advantages__item--russian::before {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.advantages__item--pack::before {
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {

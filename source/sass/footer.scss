@@ -1,7 +1,7 @@
 .footer {
   background-color: $white-two;
   width: 100%;
-  min-height: 160px;
+  height: 162px;
   padding: 0 30px;
   display: flex;
   flex-direction: row;
@@ -11,7 +11,6 @@
 .footer__inner {
   width: 100%;
   height: 100%;
-  padding: 25px 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -19,17 +18,65 @@
 }
 
 .footer__social {
+  height: 50%;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 23px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $white;
 }
 
 .footer__social-item + .footer__social-item {
   margin-left: 35px;
+}
+
+.footer__social-link {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__social-link--insta {
+  width: 22px;
+  height: 21px;
+  background-image: url("../img/icon-insta.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-insta__eff.svg");
+  }
+}
+
+.footer__social-link--fb {
+  width: 15px;
+  height: 28px;
+  background-image: url("../img/icon-fb.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-fb__eff.svg");
+  }
+}
+
+.footer__social-link--twitter {
+  width: 23px;
+  height: 20px;
+  background-image: url("../img/icon-twitter.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-twitter__eff.svg");
+  }
 }
 
 .footer__logo-image {
@@ -37,11 +84,22 @@
 }
 
 .footer__copyright {
+  height: 50%;
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center;
+}
+
+
+.footer__copyright-link {
+  display: flex;
   flex-direction: row;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright-title {
@@ -51,6 +109,7 @@
   color: $black;
   margin-right: 22px;
 }
+
 
 @media (min-width: $tablet-width) {
   .footer {

@@ -40,6 +40,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 500px) and (max-width: 767px) {
+  body {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   body {
     min-width: $tablet-width;
@@ -52,6 +59,12 @@ a {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1199px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: $desktop-width) {
   body {
@@ -62,5 +75,12 @@ a {
   .title {
     font-size: 53px;
     line-height: 1.1;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    width: 2000px;
+    margin: 0 auto;
   }
 }
