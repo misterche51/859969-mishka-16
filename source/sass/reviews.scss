@@ -1,31 +1,25 @@
 .reviews {
+  padding-top: 65px;
   padding-bottom: 50px;
   position: relative;
-  margin-bottom: 50px;
 }
 
 .reviews::after {
-  margin: 0 -50px;
-  z-index: -1;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 11.5px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.reviews__title {
-  margin-bottom: 25px;
+  @include wave-section;
+  height: 6px;
 }
 
 .reviews__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.reviews__item {
+  font-size: 15px;
+  line-height: 2;
 }
 
 .reviews__footer {
@@ -52,6 +46,7 @@
 }
 
 .reviews__author-link {
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   text-decoration: none;
   color: $greyish;
 }
@@ -86,8 +81,10 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    padding-top: 85px;
+    padding-bottom: 140px;
     background-image: url("../img/review@1x.jpg");
-    background-size: 350px 100%;
+    background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -100,6 +97,12 @@
     flex-wrap: wrap;
   }
 
+  .reviews__list {
+    margin-top: 60px;
+    margin-bottom: 65px;
+    order: 2;
+  }
+
   .reviews__footer {
     width: 100%;
     display: flex;
@@ -109,13 +112,30 @@
     order: 3;
   }
 
-  .reviews__write {
+  .reviews__button {
     align-self: center;
     margin-left: auto;
+    width: 25%;
+    min-width: 175px;
   }
 
-  .reviews__list {
-    order: 2;
+  .reviews::after {
+    height: 15px;
+  }
+
+  .reviews__author {
+    margin-bottom: 0;
+  }
+
+  .reviews__change {
+    margin-bottom: 0;
+    width: 25%;
+    min-width: 175px;
+    border: none;
+  }
+
+  .reviews__change-button--back {
+    border: none;
   }
 }
 
@@ -124,7 +144,20 @@
     background-position: 50px 0;
   }
 
+  .reviews::after {
+    height: 23px;
+  }
+
   .reviews__inner {
     padding-left: 150px;
+    // padding-left: 16.6%;
+  }
+
+  .reviews__button {
+    width: 16.6%;
+  }
+
+  .reviews__change {
+    width: 16.6%;
   }
 }

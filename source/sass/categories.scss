@@ -18,7 +18,7 @@
 }
 
 .categories__item--kids {
-  background-color: $greenyblue;
+  background-color: #56c3b2;
 }
 
 .categories__link {
@@ -62,17 +62,6 @@
     display: flex;
     margin: 0 50px;
     position: relative;
-  }
-
-  .categories::after {
-    position: absolute;
-    content: "";
-    top: 17px;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
   }
 
   .categories__item {

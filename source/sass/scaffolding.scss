@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+picture {
+  font-size: 0;
+  line-height: 0;
+}
+
 body {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
@@ -16,11 +21,6 @@ body {
   min-width: $mobile-width;
   margin: 0;
   width: 100%;
-}
-
-.title {
-  font-size: 27px;
-  line-height: 1.1;
 }
 
 .visually-hidden {
@@ -40,29 +40,10 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 500px) and (max-width: 767px) {
-  body {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: $tablet-width) {
   body {
     min-width: $tablet-width;
     width: 100%;
-  }
-
-  .title {
-    font-size: 43px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1199px) {
-  body {
-    width: 1000px;
-    margin: 0 auto;
   }
 }
 
@@ -70,17 +51,5 @@ a {
   body {
     min-width: $desktop-width;
     width: 100%;
-  }
-
-  .title {
-    font-size: 53px;
-    line-height: 1.1;
-  }
-}
-
-@media (min-width: 2000px) {
-  body {
-    width: 2000px;
-    margin: 0 auto;
   }
 }

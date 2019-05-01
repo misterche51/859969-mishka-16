@@ -1,0 +1,23 @@
+@mixin wave-section {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-size: contain;
+  background-position: bottom;
+  background-image: url("../img/bg-zigzag-line.svg");
+}
+
+@mixin catalog-title {
+  margin: 0;
+  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
