@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MISHKA - каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,13 +12,17 @@
       <nav class="nav">
         <div class="nav__logo">
           <a href="index.html" class="nav__logo-link">
-            <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+            </picture>
           </a>
-          <button class="nav__toggle-button"></button>
+          <button class="nav__toggle-button nav__toggle-button--close"></button>
         </div>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--services">
           <li class="nav__item">
-            <a class="nav__link">Каталог товаров</a>
+            <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
           <li class="nav__item">
             <a href="form.html" class="nav__link">Вязание на заказ</a>
@@ -25,34 +30,38 @@
         </ul>
         <ul class="nav__list nav__list--user">
           <li class="nav__item nav__item--search">
-            <a href="#" class="nav__link ">Поиск</a>
+            <a href="" class="nav__link">Поиск</a>
           </li>
           <li class="nav__item nav__item--cart">
-            <a href="#" class="nav__link">Корзина: пока пуста</a>
+            <a href="" class="nav__link">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <div class="main__header">
-        <div class="main__promo">
-          <ul class="main__promo-nav">
-            <li class="main__promo-item">
-              <a href="" class="main__promo-link">Новое поступление</a>
-            </li>
-            <li class="main__promo-item">
-              <a href="" class="main__promo-link">Распродажа</a>
-            </li>
-          </ul>
-          <span class="main__marketing">Бесплатная доставка по России</span>
-        </div>
-        <h1 class="main__title">Каталог товаров</h1>
-      </div>
+        <div class="main__header">
+            <div class="main__promo">
+              <ul class="main__promo-nav">
+                <li class="main__promo-item">
+                  <a href="" class="main__promo-link">Новое поступление</a>
+                </li>
+                <li class="main__promo-item">
+                  <a href="" class="main__promo-link">Распродажа</a>
+                </li>
+              </ul>
+              <span class="main__marketing">Бесплатная доставка по России</span>
+            </div>
+            <h1 class="main__title title">Каталог товаров</h1>
+          </div>
       <section class="main__section catalog">
         <div class="catalog__list">
           <div class="catalog__item">
-            <a href="#" class="catalog__item-photo">
-              <img src="http://placehold.it/260x195" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__photo-link">
+              <picture class="catalog__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                <img src="img/photo-hare-mobile@1x.jpg" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__photo" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -63,8 +72,12 @@
             </div>
           </div>
           <div class="catalog__item">
-            <a href="#" class="catalog__item-photo">
-              <img src="http://placehold.it/260x195" alt="Корзинка из пряжи розового и белого цвета" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__photo-link">
+              <picture class="catalog__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка из пряжи розового и белого цвета" class="catalog__photo" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -75,8 +88,12 @@
             </div>
           </div>
           <div class="catalog__item">
-            <a href="#" class="catalog__item-photo">
-              <img src="http://placehold.it/260x195" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__item-photo" width="260" height="195">
+            <a href="#" class="catalog__photo-link">
+              <picture class="catalog__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                <img src="img/photo-toys-mobile@1x.jpg" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__photo" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -88,44 +105,42 @@
           </div>
         </div>
         <section class="catalog__video">
-          <h2 class="catalog__video-title title">Процесс производства</h2>
           <div class="catalog__video-content">
-            <img src="../img/video-tablet@1x.jpg" class="catalog__video-image" alt="временно_для_верстки" width="260" height="155">
-            <div class="catalog__video-inner">
-              <p class="catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляюся наши товары</p>
-              <a href="" class="catalog__video-buy button">Сделать заказ</a>
-            </div>
+            <h2 class="catalog__video-title">Процесс производства</h2>
+            <picture class="catalog__video-picture">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img src="img/video-mobile@1x.jpg" class="catalog__video-image" alt="временно_для_верстки" width="260" height="155">
+            </picture>
+          </div>
+          <div class="catalog__video-inner">
+            <p class="catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляюся наши товары</p>
+            <a href="" class="catalog__video-button button">Сделать&nbsp;заказ</a>
           </div>
         </section>
       </section>
     </main>
     <footer class="footer">
-        <div class="footer__inner">
-          <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
-          <ul class="footer__social">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="footer__social-logo" width="22" height="21">
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="footer__social-logo" width="15" height="28">
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="footer__social-logo" width="23" height="20">
-              </a>
-            </li>
-          </ul>
-          <p class="footer__copyright">
+      <div class="footer__inner">
+        <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер"></a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          <a href="#" class="footer__copyright-link">
             <span class="footer__copyright-title">Разработано</span>
-            <a href="#" class="footer__copyright-link">
-              <img src="http://placehold.it/27x34" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
-            </a>
-          </p>
-        </div>
-    </footer>
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
+          </a>
+        </p>
+      </div>
+  </footer>
   </body>
 </html>

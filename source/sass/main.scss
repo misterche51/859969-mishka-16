@@ -1,17 +1,32 @@
+.main__section {
+  width: 100%;
+  padding: 0 30px;
+}
+
 .main__header {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  min-height: 490px;
+  background-color: $white-two;
+  min-height: 177px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  border-top: 1px solid $white;
+}
+
+.main__header--index {
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 506px;
+  padding-top: 76px;
 }
 
 .main__title {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   text-align: center;
-  margin-top: 70px;
+  font-size: 27px;
+  line-height: 1.11;
   padding: 0 30px;
   color: $verydarkbrown;
 }
@@ -26,7 +41,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: calc(50% + 50px);
+  width: 50%;
 }
 
 .main__promo-item {
@@ -34,6 +49,8 @@
 }
 
 .main__promo-link {
+  display: block;
+  height: 100%;
   width: 100%;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
@@ -46,28 +63,44 @@
   margin-top: auto;
 }
 
-.main__section {
-  width: 100%;
-  padding: 0 30px;
-}
-
 @media (min-width: $tablet-width) {
   .main__section {
     padding: 0 50px;
   }
 
   .main__header {
+    min-height: 225px;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .main__header::after {
+    position: absolute;
+    content: "";
+    bottom: -12px;
     width: 100%;
-    min-height: 745px;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .main__header--index {
+    padding-top: 0;
+    width: 100%;
+    min-height: 746px;
+    background-image: url("../img/hero-tablet@1x.jpg");
   }
 
   .main__title {
     width: 100%;
     padding: 0 135px;
-    margin-top: 110px;
   }
 
   .main__promo {
+    @include centering;
+
+
     font-size: 15px;
     line-height: 1.6;
     min-height: 66px;
@@ -75,11 +108,17 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .main__header--index .main__promo {
+    margin-bottom: 100px;
   }
 
   .main__promo-nav {
     display: none;
   }
+
 
   .main__marketing {
     margin-left: auto;
@@ -88,7 +127,18 @@
 
 @media (min-width: $desktop-width) {
   .main__header {
+    min-height: 255px;
+  }
+
+  .main__header::after {
+    bottom: -17px;
+    height: 34px;
+  }
+
+  .main__header--index {
     width: 100%;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    min-height: 746px;
   }
 
   .main__title {
@@ -103,5 +153,11 @@
 
   .main__promo-item {
     padding: 0;
+    width: 33.3%;
+    min-width: 185px;
+  }
+
+  .main__promo-item:not(:first-child) {
+    text-align: center;
   }
 }

@@ -12,11 +12,15 @@
       <nav class="nav">
         <div class="nav__logo">
           <a href="index.html" class="nav__logo-link">
-            <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+            </picture>
           </a>
-          <button class="nav__toggle-button"></button>
+          <button class="nav__toggle-button nav__toggle-button--close"></button>
         </div>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--services">
           <li class="nav__item">
             <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
@@ -26,7 +30,7 @@
         </ul>
         <ul class="nav__list nav__list--user">
           <li class="nav__item nav__item--search">
-            <a href="" class="nav__link ">Поиск</a>
+            <a href="" class="nav__link">Поиск</a>
           </li>
           <li class="nav__item nav__item--cart">
             <a href="" class="nav__link">Корзина: пока пуста</a>
@@ -35,7 +39,7 @@
       </nav>
     </header>
     <main class="main">
-      <div class="main__header">
+      <div class="main__header main__header--index">
         <div class="main__promo">
           <ul class="main__promo-nav">
             <li class="main__promo-item">
@@ -47,14 +51,14 @@
           </ul>
           <span class="main__marketing">Бесплатная доставка по России</span>
         </div>
-        <h1 class="main__title">Милые штуки ручной работы&nbsp;для дома</h1>
+        <h1 class="main__title title">Милые штуки ручной работы&nbsp;для дома</h1>
         <nav class="main__nav">
             <ul class="categories">
               <li class="categories__item categories__item--decor">
-                <a href="" class="categories__link">Предметы интерьера</a>
+                <a href="" class="categories__link categories__link--decor">Предметы<br>интерьера</a>
               </li>
               <li class="categories__item categories__item--kids">
-                <a href="" class="categories__link">Детские игрушки</a>
+                <a href="" class="categories__link categories__link--kids">Детские<br>игрушки</a>
               </li>
             </ul>
         </nav>
@@ -84,7 +88,11 @@
               </tbody>
             </table>
           </div>
-          <img src="http://placehold.it/260x315" class="promo__image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
+          <picture class="promo__photo" >
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" class="promo__photo-image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
+          </picture>
           <div class="promo__customer-info">
             <span class="promo__price">Цена: 990 руб.</span>
             <a href="" class="promo__buy button">Заказать</a>
@@ -106,9 +114,7 @@
         <div class="reviews__inner">
           <h2 class="reviews__title title">Отзывы</h2>
           <ul class="reviews__list">
-            <li class="reviews__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярныъ инстамамочек. В отчаянии, я накупила аксессуаров и игрушку в Мишке, и мои фоторафии сразу стали более стильными, а также набирают больше лайков!</p>
-            </li>
+            <li class="reviews__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушку в Мишке, и мои фоторафии сразу стали более стильными, а также набирают больше лайков!</li>
           </ul>
           <div class="reviews__footer">
               <p class="reviews__author">
@@ -116,11 +122,11 @@
                 <a href="#" class="reviews__author-link">@misssssiskras</a>
               </p>
               <div class="reviews__change">
-                <button type="button" class="reviews__change reviews__change-back">Назад</button>
-                <button type="button" class="reviews__change reviews__change-forward">Вперед</button>
+                <button type="button" class="reviews__change-button reviews__change-button--back" aria-label="Перейти к предыдущему отзыву"></button>
+                <button type="button" class="reviews__change-button reviews__change-button--forward" aria-label="Перейти к следующему отзыву"></button>
               </div>
           </div>
-          <a href="" class="reviews__write button">Написать</a>
+          <a href="" class="reviews__button button">Написать</a>
         </div>
       </section>
       <section class="main__section contacts">
@@ -138,38 +144,53 @@
             </div>
           </div>
           <div class="contacts__footer">
-            <img src="http://placehold.it/320x457" alt="Мы на карте Москвы" class="contacts__map" width="320" height="457">
-            <a href="" class="contacts__feedback button">Напишите нам</a>
+              <picture class="contacts__map" >
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+                <img src="img/map-mobile@1x.jpg" alt="Мы на карте Москвы" class="contacts__map-image" width="320" height="457">
+              </picture>
+            <a href="" class="contacts__button button">Напишите&nbsp;нам</a>
           </div>
       </section>
     </main>
     <footer class="footer">
         <div class="footer__inner">
-          <img src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
+          <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
           <ul class="footer__social">
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/22x21" alt="Мы в Инстаграм" class="footer__social-logo" width="22" height="21">
-              </a>
+              <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм"></a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/15x28" alt="Мы в Фейсбук" class="footer__social-logo" width="15" height="28">
-              </a>
+              <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук"></a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <img src="http://placehold.it/23x20" alt="Мы в Твиттер" class="footer__social-logo" width="23" height="20">
-              </a>
+              <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер"></a>
             </li>
           </ul>
           <p class="footer__copyright">
-            <span class="footer__copyright-title">Разработано</span>
             <a href="#" class="footer__copyright-link">
-              <img src="http://placehold.it/27x34" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
+              <span class="footer__copyright-title">Разработано</span>
+              <img src="img/logo-htmlacademy.svg" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
             </a>
           </p>
         </div>
     </footer>
+    <section class="popup popup--to-cart main__section ">
+      <form class="popup__form">
+        <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+        <fieldset class="popup__fieldset">
+          <legend class="popup__legend">Выберете размер:</legend>
+          <div class="popup__buttons">
+            <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+            <label class="popup__label" for="small">s</label>
+            <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+            <label class="popup__label" for="middle">m</label>
+            <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+            <label class="popup__label" for="large">l</label>
+          </div>
+        </fieldset>
+        <button type="submit" class="popup__submit button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
