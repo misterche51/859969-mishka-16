@@ -133,7 +133,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    @include centering;
+
+
     padding-top: 71px;
+    padding-bottom: 105px;
     position: relative;
   }
 

@@ -21,3 +21,13 @@
     line-height: 1.2;
   }
 }
+
+@mixin centering-tablet {
+  max-width: $max-width-tablet;
+  margin: 0 auto;
+}
+
+@mixin centering {
+  max-width: $max-width;
+  margin: 0 auto;
+}

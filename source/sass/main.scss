@@ -14,10 +14,11 @@
 }
 
 .main__header--index {
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: 50% 0;
+  background-position: center top;
   background-repeat: no-repeat;
-  min-height: 489px;
+  min-height: 506px;
   padding-top: 76px;
 }
 
@@ -48,6 +49,8 @@
 }
 
 .main__promo-link {
+  display: block;
+  height: 100%;
   width: 100%;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
@@ -58,12 +61,6 @@
 .main__nav {
   width: 100%;
   margin-top: auto;
-}
-
-.main__description {
-  margin: 0;
-  padding: 0 30px;
-  padding-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -101,6 +98,9 @@
   }
 
   .main__promo {
+    @include centering;
+
+
     font-size: 15px;
     line-height: 1.6;
     min-height: 66px;
@@ -119,15 +119,9 @@
     display: none;
   }
 
+
   .main__marketing {
     margin-left: auto;
-  }
-
-  .main__description {
-    padding-left: 50px;
-    padding-top: 70px;
-    font-size: 17px;
-    line-height: 1.76;
   }
 }
 
@@ -145,8 +139,6 @@
     width: 100%;
     background-image: url("../img/hero-desktop@1x.jpg");
     min-height: 746px;
-    background-size: cover;
-    background-position: center;
   }
 
   .main__title {
@@ -161,12 +153,11 @@
 
   .main__promo-item {
     padding: 0;
+    width: 33.3%;
+    min-width: 185px;
   }
 
-  .main__description {
-    // min-width: 700px;
-    // width: 61%;
-    padding: 70px 225px 0 225px;
-    margin: auto;
+  .main__promo-item:not(:first-child) {
+    text-align: center;
   }
 }

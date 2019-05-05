@@ -2,6 +2,12 @@
   margin-bottom: 55px;
 }
 
+.form__description {
+  margin: 0;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+
 .form__fieldset {
   border: none;
   margin: 0;
@@ -141,7 +147,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 50px;
+  }
+
+  .form__description {
+    @include centering-tablet;
+
+
+    padding-left: 50px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
   .form__fieldset {
+    @include centering-tablet;
+
+
     padding: 65px 50px 20px 217px;
     flex-direction: row;
     position: relative;
@@ -150,6 +174,7 @@
   .form__legend {
     position: absolute;
     left: 50px;
+    width: calc(100% - 50px);
     top: 81px;
   }
 
@@ -177,11 +202,14 @@
     padding-left: 18px;
   }
 
-  .form__wrapper:nth-child(2n) {
+  .form__wrapper:nth-child(2n+1) {
     background-color: $white-two;
   }
 
   .form__footer {
+    @include centering-tablet;
+
+
     flex-direction: row-reverse;
     padding: 0 50px;
   }
@@ -199,13 +227,25 @@
 
 
 @media (min-width: $desktop-width) {
+  .form__description {
+    @include centering;
+
+
+    padding: 112px 225px 70px 225px;
+    margin: auto;
+  }
+
   .form__fieldset {
+    @include centering;
+
+
     padding-left: 225px;
     padding-right: 225px;
   }
 
   .form__legend {
     left: 112px;
+    width: calc(100% - 112px);
   }
 
   .form__container {
@@ -218,6 +258,9 @@
   }
 
   .form__footer {
+    @include centering;
+
+
     padding-left: 225px;
     padding-right: 225px;
   }

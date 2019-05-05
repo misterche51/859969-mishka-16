@@ -53,8 +53,8 @@
             </div>
             <h1 class="main__title title">Вязание на заказ</h1>
       </div>
-      <p class="main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <div class="form__wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Тип</legend>
@@ -70,17 +70,17 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">Цвет</legend>
             <div class="form__container">
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-white" checked>
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="white" id="filter-color-white" checked>
               <label class="form__label--checkbox form__label" for="filter-color-white">Белый</label>
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-grey" checked>
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="grey" id="filter-color-grey" checked>
               <label class="form__label--checkbox form__label" for="filter-color-grey">Серый</label>
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-tiffany">
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="tiffany" id="filter-color-tiffany">
               <label class="form__label--checkbox form__label" for="filter-color-tiffany">"Тиффани"</label>
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-black">
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="black" id="filter-color-black">
               <label class="form__label--checkbox form__label" for="filter-color-black">Черный</label>
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-pink">
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="pink" id="filter-color-pink">
               <label class="form__label--checkbox form__label" for="filter-color-pink">Розовый</label>
-              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" id="filter-color-orange">
+              <input type="checkbox" class="visually-hidden form__input form__input--checkbox" name="color" value="orange" id="filter-color-orange">
               <label class="form__label--checkbox form__label" for="filter-color-orange">Оранжевый</label>
             </div>
           </fieldset>
@@ -121,7 +121,7 @@
           </fieldset>
           <div class="form__footer">
               <p class="form__footnote">*Поля обязательны для заполнения</p>
-              <button type="submit" class="form__submit button">Отправить заказ</button>
+              <button type="submit" class="form__submit button">Отправить&nbsp;заказ</button>
           </div>
         </div>
       </form>

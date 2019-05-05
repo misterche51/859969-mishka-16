@@ -111,15 +111,14 @@
 
 
 @media (min-width: $tablet-width) {
-  .footer {
-    padding: 0 50px;
-  }
-
   .footer__logo-image {
     display: block;
   }
 
   .footer__inner {
+    @include centering;
+
+    padding: 0 50px;
     flex-direction: row;
     justify-content: space-between;
   }

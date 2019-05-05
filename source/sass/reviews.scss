@@ -90,6 +90,7 @@
   }
 
   .reviews__inner {
+    @include centering-tablet;
     width: 100%;
     margin: auto;
     display: flex;
@@ -141,6 +142,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    @include centering;
     background-position: 50px 0;
   }
 
@@ -149,8 +151,10 @@
   }
 
   .reviews__inner {
+    @include centering;
+
+    margin: 0;
     padding-left: 150px;
-    // padding-left: 16.6%;
   }
 
   .reviews__button {

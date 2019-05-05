@@ -70,6 +70,9 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    @include centering-tablet;
+
+
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 45px;
@@ -113,7 +116,6 @@
   .promo__photo {
     position: absolute;
     right: 0;
-    width: 50%;
     margin-left: auto;
   }
 
@@ -128,6 +130,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    @include centering;
+
+
     min-height: 800px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,11 +145,11 @@
   }
 
   .promo__header {
+    width: calc(100% - 50px);
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    left: 50px;
     top: 130px;
   }
 
