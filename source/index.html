@@ -11,7 +11,7 @@
     <header class="header">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-link">
+          <a class="nav__logo-link">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -155,7 +155,9 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-          <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
+          <a class="footer__logo-link">
+            <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
+          </a>
           <ul class="footer__social">
             <li class="footer__social-item">
               <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм"></a>
@@ -175,7 +177,7 @@
           </p>
         </div>
     </footer>
-    <section class="popup popup--to-cart main__section ">
+    <section class="popup popup--to-cart">
       <form class="popup__form">
         <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
         <fieldset class="popup__fieldset">

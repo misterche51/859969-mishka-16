@@ -25,6 +25,9 @@
 .contacts__item {
   display: flex;
   flex-direction: row;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 2;
 }
 
 .contacts__item + .contacts__item {
@@ -32,9 +35,6 @@
 }
 
 .contacts__type {
-  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 2;
   color: $greyish;
   margin-right: 30px;
 }
@@ -44,15 +44,21 @@
   margin: 0;
   padding: 0;
   font-style: normal;
-  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 2;
   color: $greyish;
 }
 
 .contacts__value[href] {
   align-self: flex-start;
   border-bottom: 1px solid $seafoam;
+
+  &:hover,
+  &:focus {
+    color: $seafoam;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__footer {
@@ -113,6 +119,8 @@
   .contacts__item {
     width: 50%;
     padding-right: 30px;
+    font-size: 17px;
+    line-height: 1.76;
   }
 
   .contacts__item + .contacts__item {
@@ -125,8 +133,7 @@
   }
 
   .contacts__button {
-    min-width: 260px;
-    width: calc(100% - 100px);
+    width: 230px;
     margin: 40px auto;
   }
 }

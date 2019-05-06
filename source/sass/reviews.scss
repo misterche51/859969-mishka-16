@@ -46,6 +46,7 @@
 }
 
 .reviews__author-link {
+  outline: none;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   text-decoration: none;
   color: $greyish;
@@ -61,6 +62,7 @@
 }
 
 .reviews__change-button {
+  outline: none;
   width: 50%;
   background-color: transparent;
   border: none;
@@ -68,6 +70,15 @@
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__change-button--back {
@@ -104,6 +115,12 @@
     order: 2;
   }
 
+  .reviews__item {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+
   .reviews__footer {
     width: 100%;
     display: flex;
@@ -126,6 +143,8 @@
 
   .reviews__author {
     margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.33;
   }
 
   .reviews__change {

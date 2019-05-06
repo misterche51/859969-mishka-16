@@ -85,6 +85,18 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid $white;
+  position: relative;
+}
+
+.catalog__item-price::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  right: 0;
+  background-image: url("../img/icon-cart.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .catalog__video {
@@ -274,9 +286,23 @@
     min-height: 169px;
   }
 
+  .catalog__item:hover > .catalog__item-info,
+  .catalog__item:focus > .catalog__item-info {
+    box-shadow: 0 9px 15px 1px $white-two;
+  }
+
+// нужно как-то сделать стили при нажатии
+  // .catalog__item-info:active {
+  //   box-shadow: 0 9px 0 5px $red;
+  // }
+
   .catalog__video {
     flex-direction: row;
     position: relative;
+  }
+
+  .catalog__video:hover {
+    box-shadow: 0 9px 15px 1px $white-two;
   }
 
   .catalog__video-content {
@@ -294,11 +320,10 @@
   }
 
   .catalog__video-title {
-    width: 30%;
     padding-top: 100px;
     padding-left: 41px;
     padding-right: 41px;
-    margin-left: 79px;
+    margin-left: 35px;
   }
 
   .catalog__video-title::before {
@@ -306,13 +331,17 @@
   }
 
   .catalog__video-inner {
-    width: 30%;
     height: 455px;
+    width: 100%;
+    max-width: 500px;
     margin-left: 760px;
+    padding: 0;
     padding-top: 180px;
+    padding-right: 41px;
   }
 
   .catalog__video-button {
     margin-top: 51px;
+    max-width: 260px;
   }
 }
