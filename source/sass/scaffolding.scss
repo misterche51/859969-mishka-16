@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-picture {
-  font-size: 0;
-  line-height: 0;
-}
-
 body {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
@@ -32,6 +27,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 

@@ -88,10 +88,13 @@
               </tbody>
             </table>
           </div>
-          <picture class="promo__photo" >
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img src="img/triple-set-mobile@1x.jpg" class="promo__photo-image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
+          <picture class="promo__photo">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="promo__photo-image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
           </picture>
           <div class="promo__customer-info">
             <span class="promo__price">Цена: 990 руб.</span>
@@ -144,10 +147,13 @@
             </div>
           </div>
           <div class="contacts__footer">
-              <picture class="contacts__map" >
-                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-                <img src="img/map-mobile@1x.jpg" alt="Мы на карте Москвы" class="contacts__map-image" width="320" height="457">
+              <picture class="contacts__map">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте Москвы" class="contacts__map-image" width="320" height="457">
               </picture>
             <a href="" class="contacts__button button">Напишите&nbsp;нам</a>
           </div>
@@ -160,13 +166,25 @@
           </a>
           <ul class="footer__social">
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм"></a>
+              <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм">
+                <svg class="footer__social-logo" width="22" height="21">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук"></a>
+              <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук">
+                <svg class="footer__social-logo" width="15" height="28">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер"></a>
+              <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер">
+                <svg class="footer__social-logo" width="23" height="20">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <p class="footer__copyright">
@@ -195,4 +213,7 @@
       </form>
     </section>
   </body>
+  <div>
+    <include src="source/img/sprite.svg"></include>
+  </div>
 </html>
