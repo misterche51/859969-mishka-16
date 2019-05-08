@@ -1,4 +1,5 @@
 .button {
+  outline: none;
   border: none;
   background-color: transparent;
   display: block;
@@ -11,4 +12,14 @@
   color: $greyish;
   padding: 20px 41px;
   box-shadow: inset 0 0 0 2px $greyish;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $greyish;
+  }
+
+  &:active {
+    color: rgba($color: white, $alpha: 0.3);
+  }
 }

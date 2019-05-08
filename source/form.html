@@ -127,26 +127,43 @@
       </form>
     </main>
     <footer class="footer">
-      <div class="footer__inner">
-        <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм"></a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук"></a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер"></a>
-          </li>
-        </ul>
-        <p class="footer__copyright">
-          <a href="#" class="footer__copyright-link">
-            <span class="footer__copyright-title">Разработано</span>
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
+        <div class="footer__inner">
+          <a class="footer__logo-link">
+            <img src="img/logo-footer.svg" alt="Логотип магазина MISHKA" class="footer__logo-image" width="86" height="35">
           </a>
-        </p>
-      </div>
-  </footer>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм">
+                <svg class="footer__social-logo" width="22" height="21">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук">
+                <svg class="footer__social-logo" width="15" height="28">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер">
+                <svg class="footer__social-logo" width="23" height="20">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            <a href="#" class="footer__copyright-link">
+              <span class="footer__copyright-title">Разработано</span>
+              <img src="img/logo-htmlacademy.svg" alt="HTML Academy" class="footer__copyright-logo" width="27" height="34">
+            </a>
+          </p>
+        </div>
+    </footer>
   </body>
+  <div>
+    <include src="source/img/sprite.svg"></include>
+  </div>
 </html>

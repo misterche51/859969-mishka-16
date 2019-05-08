@@ -19,7 +19,12 @@
   margin-bottom: 25px;
 }
 
+.promo__title {
+  margin-bottom: 8px;
+}
+
 .promo__label {
+  text-transform: uppercase;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.17;
@@ -91,17 +96,22 @@
     z-index: 2;
   }
 
+  .promo__title {
+    margin-bottom: 0;
+  }
+
   .promo__label {
     width: 77px;
     margin-right: 25px;
     margin-left: auto;
     align-self: center;
+    line-height: 1;
   }
 
   .promo__text {
     font-size: 17px;
     line-height: 1.76;
-    width: 290px;
+    margin-bottom: 50px;
   }
 
   .promo__inner {
@@ -125,6 +135,8 @@
 
   .promo__price {
     margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -167,10 +179,6 @@
     padding-top: 160px;
     padding-bottom: 95px;
     margin-bottom: 0;
-  }
-
-  .promo__text {
-    margin-bottom: 50px;
   }
 
   .promo__image {

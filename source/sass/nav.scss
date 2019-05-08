@@ -50,6 +50,7 @@
 }
 
 .nav__link {
+  outline: none;
   text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
@@ -59,6 +60,15 @@
   padding-left: 76px;
   padding-top: 25px;
   position: relative;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__link::before {
