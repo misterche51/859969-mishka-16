@@ -81,13 +81,22 @@
   width: 16px;
   height: 16px;
   background-color: $ultrawhite;
-  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 12px $greyish;
+  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $greyish;
 }
 
-.form__input--radio:checked + .form__label--radio::before,
-.form__input--radio:active + .form__label--radio::before {
+.form__input--radio:checked + .form__label--radio::before {
   background-color: $seafoam;
 }
+
+.form__input--radio:active + .form__label--radio::before {
+  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $white;
+}
+
+.form__input--radio:hover + .form__label::before,
+.form__input--radio:focus + .form__label::before {
+  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $lazurit;
+}
+
 
 .form__label--checkbox::before {
   margin-left: -60px;
@@ -106,6 +115,15 @@
   background-repeat: no-repeat;
 }
 
+.form__input--checkbox:active + .form__label--checkbox::before {
+  box-shadow: 0 0 0 2px $white;
+}
+
+.form__input--checkbox:hover + .form__label::before,
+.form__input--checkbox:focus + .form__label::before {
+  box-shadow: 0 0 0 2px $lazurit;
+}
+
 .form__label--username {
   padding: 0;
 }
@@ -113,27 +131,67 @@
 .form__text-input {
   background-color: transparent;
   border: none;
+  outline: none;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid $greyish;
+  border-bottom: 2px solid $greyish;
   margin-bottom: 25px;
+
+  color: $black;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.05;
+  padding-left: 17px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $lazurit;
+  }
+
+  &:hover + .form__input-logo,
+  &:focus + .form__input-logo {
+    opacity: 1;
+    fill: $lazurit;
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  width: 100%;
+}
+
+.form__input-logo {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  fill: $greyish;
+  opacity: 0.3;
 }
 
 .form__text-input::placeholder {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.05;
+  color: $greyish;
+  opacity: 0.3;
 }
 
 .form__text-input--comment {
-  border: 1px solid $greyish;
+  border: 2px solid $greyish;
+  outline: none;
+  resize: none;
+  overflow: auto;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $lazurit;
+  }
 }
 
-.form__text-input--comment::placeholder {
-  padding-left: 17px;
-  width: 80%;
-}
 
 .form__footer {
   display: flex;
@@ -144,6 +202,8 @@
 
 .form__submit {
   width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -199,7 +259,6 @@
 
   .form__text-input::placeholder {
     background-color: transparent;
-    padding-left: 18px;
   }
 
   .form__wrapper:nth-child(2n+1) {

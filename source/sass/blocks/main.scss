@@ -19,8 +19,6 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 575px auto;
-  min-height: 506px;
-  padding-top: 76px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -30,10 +28,17 @@
 .main__title {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   text-align: center;
-  font-size: 27px;
   line-height: 1.11;
-  padding: 0 30px;
+  padding: 65px 35px 80px 35px;
   color: $verydarkbrown;
+
+  @media (max-width: $tablet-width) {
+    font-size: 27px;
+  }
+}
+
+.main__header--index .main__title {
+  padding: 86px 38px 130px 38px;
 }
 
 .main__promo {
@@ -74,7 +79,6 @@
 
 .main__nav {
   width: 100%;
-  margin-top: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,7 +106,6 @@
   .main__header--index {
     padding-top: 0;
     width: 100%;
-    min-height: 746px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px auto;
 
@@ -113,7 +116,12 @@
 
   .main__title {
     width: 100%;
-    padding: 0 135px;
+    padding-top: 45px;
+    padding-bottom: 75px;
+  }
+
+  .main__header--index .main__title {
+    padding: 130px 135px 370px 135px;
   }
 
   .main__promo {
@@ -127,17 +135,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .main__header--index .main__promo {
-    margin-bottom: 100px;
   }
 
   .main__promo-nav {
     display: none;
   }
-
 
   .main__marketing {
     margin-left: auto;
@@ -157,7 +159,6 @@
   .main__header--index {
     width: 100%;
     background-image: url("../img/hero-desktop@1x.jpg");
-    min-height: 746px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -166,7 +167,12 @@
 
   .main__title {
     width: 100%;
-    padding: 0 270px;
+    padding-top: 55px;
+    padding-bottom: 110px;
+  }
+
+  .main__header--index .main__title {
+    padding: 110px 250px 330px 250px;
   }
 
   .main__promo-nav {
@@ -182,5 +188,9 @@
 
   .main__promo-item:not(:first-child) {
     text-align: center;
+  }
+
+  .main__nav:hover {
+    margin-top: -5px;
   }
 }
