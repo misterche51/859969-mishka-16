@@ -23,7 +23,7 @@
   font-size: 17px;
   line-height: 0.95;
   text-transform: uppercase;
-  color: $lazurit;
+  color: $decorative-elements-color;
   width: 100%;
   position: relative;
   margin-bottom: 36px;
@@ -38,7 +38,7 @@
     min-width: 200px;
     width: calc(100% - 62px);
     height: 1px;
-    background-color: $lazurit;
+    background-color: $decorative-elements-color;
   }
 
   .form__legend--mail::after {
@@ -80,21 +80,21 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  background-color: $ultrawhite;
-  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $greyish;
+  background-color: $background-fill-color;
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $content-main-color;
 }
 
-.form__input--radio:checked + .form__label--radio::before {
-  background-color: $seafoam;
+.form__radio:checked + .form__label--radio::before {
+  background-color: $decorative-elements-color;
 }
 
-.form__input--radio:active + .form__label--radio::before {
-  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $white;
+.form__radio:active + .form__label--radio::before {
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $decorative-lines-color;
 }
 
-.form__input--radio:hover + .form__label::before,
-.form__input--radio:focus + .form__label::before {
-  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 13px $lazurit;
+.form__radio:hover + .form__label::before,
+.form__radio:focus + .form__label::before {
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $decorative-elements-color;
 }
 
 
@@ -104,41 +104,41 @@
   width: 38px;
   height: 38px;
   background-color: transparent;
-  box-shadow: 0 0 0 2px $greyish;
+  box-shadow: 0 0 0 2px $content-main-color;
 }
 
-.form__input--checkbox:checked + .form__label--checkbox::before,
-.form__input--checkbox:active + .form__label--checkbox::before {
+.form__checkbox:checked + .form__label--checkbox::before,
+.form__checkbox:active + .form__label--checkbox::before {
   background-position: center center;
   background-size: 22px auto;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
-.form__input--checkbox:active + .form__label--checkbox::before {
-  box-shadow: 0 0 0 2px $white;
+.form__checkbox:active + .form__label--checkbox::before {
+  box-shadow: 0 0 0 2px $decorative-lines-color;
 }
 
-.form__input--checkbox:hover + .form__label::before,
-.form__input--checkbox:focus + .form__label::before {
-  box-shadow: 0 0 0 2px $lazurit;
+.form__checkbox:hover + .form__label::before,
+.form__checkbox:focus + .form__label::before {
+  box-shadow: 0 0 0 2px $decorative-elements-color;
 }
 
 .form__label--username {
   padding: 0;
 }
 
-.form__text-input {
+.form__input {
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 2px solid $greyish;
+  border-bottom: 2px solid $content-main-color;
   margin-bottom: 25px;
 
-  color: $black;
+  color: $heading-color;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.05;
@@ -146,13 +146,13 @@
 
   &:hover,
   &:focus {
-    border-bottom: 2px solid $lazurit;
+    border-bottom: 2px solid $decorative-elements-color;
   }
 
   &:hover + .form__input-logo,
   &:focus + .form__input-logo {
     opacity: 1;
-    fill: $lazurit;
+    fill: $decorative-elements-color;
   }
 }
 
@@ -168,27 +168,27 @@
   position: absolute;
   right: 0;
   top: 8px;
-  fill: $greyish;
+  fill: $content-main-color;
   opacity: 0.3;
 }
 
-.form__text-input::placeholder {
+.form__input::placeholder {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.05;
-  color: $greyish;
+  color: $content-main-color;
   opacity: 0.3;
 }
 
-.form__text-input--comment {
-  border: 2px solid $greyish;
+.form__input--comment {
+  border: 2px solid $content-main-color;
   outline: none;
   resize: none;
   overflow: auto;
 
   &:hover,
   &:focus {
-    border: 2px solid $lazurit;
+    border: 2px solid $decorative-elements-color;
   }
 }
 
@@ -257,12 +257,12 @@
     padding-right: 25px;
   }
 
-  .form__text-input::placeholder {
+  .form__input::placeholder {
     background-color: transparent;
   }
 
   .form__wrapper:nth-child(2n+1) {
-    background-color: $white-two;
+    background-color: $background-fill-color;
   }
 
   .form__footer {

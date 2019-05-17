@@ -35,7 +35,7 @@
 }
 
 .contacts__type {
-  color: $greyish;
+  color: $content-main-color;
   margin-right: 30px;
 }
 
@@ -44,16 +44,16 @@
   margin: 0;
   padding: 0;
   font-style: normal;
-  color: $greyish;
+  color: $content-main-color;
 }
 
 .contacts__value[href] {
   align-self: flex-start;
-  border-bottom: 1px solid $seafoam;
+  border-bottom: 1px solid $decorative-elements-color;
 
   &:hover,
   &:focus {
-    color: $seafoam;
+    color: $decorative-elements-color;
   }
 
   &:active {

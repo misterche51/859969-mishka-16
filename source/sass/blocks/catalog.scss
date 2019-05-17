@@ -13,19 +13,12 @@
   align-items: center;
 }
 
-.catalog__title {
-  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 26.5px;
-  line-height: 1.1;
-  color: $verydarkbrown;
-}
-
 .catalog__item {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid $white;
+  border: 1px solid $decorative-lines-color;
 }
 
 .catalog__item + .catalog__item {
@@ -71,20 +64,20 @@
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 13px;
   line-height: 2.3;
-  color: $greyish;
+  color: $content-main-color;
   padding-top: 17px;
 }
 
-.catalog__price {
+.catalog__item-price-wrap {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: $black;
+  color: $heading-color;
   width: 100%;
   margin-top: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid $white;
+  border-top: 1px solid $decorative-lines-color;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -94,7 +87,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  border: 1px solid $white-two;
+  border: 1px solid $decorative-lines-color;
 }
 
 .catalog__video-title {
@@ -214,7 +207,7 @@
     line-height: 2;
   }
 
-  .catalog__price {
+  .catalog__item-price-wrap {
     font-size: 17px;
     line-height: 1.4;
     margin-top: auto;
@@ -318,24 +311,24 @@
 
   .catalog__item:hover > .catalog__item-info,
   .catalog__item:focus > .catalog__item-info {
-    box-shadow: 0 9px 15px 1px $white-two;
+    box-shadow: 0 9px 15px 1px $decorative-lines-color;
   }
 
-  .catalog__cart {
-    color: $white;
+  .catalog__item-cart-link {
+    color: $decorative-lines-color;
 
     &:hover,
     &:focus {
-      color: $seafoam;
+      color: $decorative-elements-color;
     }
 
     &:active {
-      color: $seafoam;
+      color: $decorative-elements-color;
       opacity: 0.3;
     }
   }
 
-  .catalog__cart-icon {
+  .catalog__item-cart-icon {
     fill: currentColor;
   }
 
@@ -345,7 +338,7 @@
   }
 
   .catalog__video:hover {
-    box-shadow: 0 9px 15px 1px $white-two;
+    box-shadow: 0 9px 15px 1px $decorative-lines-color;
   }
 
   .catalog__video-content {
@@ -391,6 +384,7 @@
   .catalog__video-inner {
     height: 455px;
     width: 100%;
+    z-index: 5;
     max-width: 500px;
     margin-left: 760px;
     padding: 0;

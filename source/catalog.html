@@ -32,14 +32,14 @@
             </ul>
             <ul class="nav__list nav__list--user">
               <li class="nav__item nav__item--search">
-                <a href="" class="nav__link">
+                <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
                   <svg role="img" class="nav__icon" width="18" height="18">
                     <use xlink:href="img/sprite.svg#icon-search"></use>
                   </svg>
                   Поиск</a>
               </li>
               <li class="nav__item nav__item--cart">
-                <a href="" class="nav__link">
+                <a href="" class="nav__link" aria-label="Перейти в корзину">
                   <svg role="img" class="nav__icon" width="18" height="18">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
@@ -81,10 +81,11 @@
                 <h2 class="catalog__item-name">Зайчик-попрыгайчик</h2>
               </a>
               <span class="catalog__item-params">Рост 30 см, вес 200 г</span>
-              <p class="catalog__price">
-                <span class="catalog__price-value">1 200 руб.</span>
-                <a href="#" class="catalog__cart">
-                  <svg class="catalog__cart-icon" width="21" height="18">
+              <p class="catalog__item-price-wrap">
+                <span class="catalog__item-price">1 200 руб.</span>
+                <a href="#" class="catalog__item-cart-link">
+                  <svg class="catalog__item-cart-icon" width="21" height="18" aria-labelledby="heading" focusable="false">
+                    <title id="heading">В корзину</title>
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
@@ -107,10 +108,11 @@
                 <h2 class="catalog__item-name">Корзинка для белья</h2>
               </a>
               <span class="catalog__item-params">Диаметр 15 см, высота 10 см</span>
-              <p class="catalog__price">
-                <span class="catalog__price-value">690 руб.</span>
-                <a href="#" class="catalog__cart">
-                  <svg class="catalog__cart-icon" width="21" height="18">
+              <p class="catalog__item-price-wrap">
+                <span class="catalog__item-price">690 руб.</span>
+                <a href="#" class="catalog__item-cart-link">
+                  <svg class="catalog__item-cart-icon" width="21" height="18" aria-labelledby="heading" focusable="false">
+                    <title id="heading">В корзину</title>
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
@@ -133,10 +135,11 @@
                 <h2 class="catalog__item-name">Большая корзинка для игрушек</h2>
               </a>
               <span class="catalog__item-params">Диаметр 30 см, высота 30 см</span>
-              <p class="catalog__price">
-                <span class="catalog__price-value">1 500 руб.</span>
-                <a href="#" class="catalog__cart">
-                  <svg class="catalog__cart-icon" width="21" height="18">
+              <p class="catalog__item-price-wrap">
+                <span class="catalog__item-price">1 500 руб.</span>
+                <a href="#" class="catalog__item-cart-link">
+                  <svg class="catalog__item-cart-icon" width="21" height="18" aria-labelledby="heading" focusable="false">
+                    <title id="heading">В корзину</title>
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
@@ -168,7 +171,7 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-          <a href="index.html" class="footer__logo-link">
+          <a href="index.html" class="footer__logo-link" aria-label="Перейти на главную">
             <svg role="img" class="footer__logo-image" width="102" height="34">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
@@ -197,7 +200,6 @@
             </li>
           </ul>
           <a href="#" class="footer__copyright-link" aria-label="Переход на сайт HTML Academy">
-            <!-- <span class="footer__copyright-title">Разработано</span> -->
             Разработано
             <svg role="img" class="footer__copyright-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>

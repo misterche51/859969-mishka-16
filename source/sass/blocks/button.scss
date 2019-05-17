@@ -9,18 +9,18 @@
   text-align: center;
   font-size: 17px;
   line-height: 1.17;
-  color: $greyish;
+  color: $content-main-color;
   padding: 20px 41px;
-  box-shadow: inset 0 0 0 2px $greyish;
+  box-shadow: inset 0 0 0 2px $content-main-color;
 
   &:hover,
   &:focus {
     color: white;
-    background-color: $greyish;
+    background-color: $content-main-color;
   }
 
   &:active {
     color: rgba($color: white, $alpha: 0.3);
-    background-color: $greyish;
+    background-color: $content-main-color;
   }
 }

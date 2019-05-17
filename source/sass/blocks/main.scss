@@ -4,17 +4,17 @@
 }
 
 .main__header {
-  background-color: $white-two;
+  background-color: $background-fill-color;
   min-height: 177px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 1px solid $white;
+  border-top: 1px solid $decorative-lines-color;
 }
 
 .main__header--index {
-  background-color: #f9f9f9;
+  background-color: $background-index-header-color;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -30,7 +30,6 @@
   text-align: center;
   line-height: 1.11;
   padding: 65px 35px 80px 35px;
-  color: $verydarkbrown;
 
   @media (max-width: $tablet-width) {
     font-size: 27px;
@@ -65,7 +64,7 @@
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.4;
-  color: $black;
+  color: $heading-color;
 
   &:hover,
   &:focus {
@@ -188,9 +187,5 @@
 
   .main__promo-item:not(:first-child) {
     text-align: center;
-  }
-
-  .main__nav:hover {
-    margin-top: -5px;
   }
 }

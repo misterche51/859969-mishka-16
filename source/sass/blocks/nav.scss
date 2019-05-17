@@ -55,7 +55,7 @@
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.4;
-  color: $black;
+  color: $heading-color;
   height: 100%;
   padding-left: 76px;
   padding-top: 25px;
@@ -74,11 +74,12 @@
 .nav__icon {
   margin-left: -44px;
   margin-right: 26px;
-  fill: $white;
+  fill: $decorative-lines-color;
 }
 
-.nav__link:hover > .nav__icon {
-  fill: $seafoam;
+.nav__link:hover > .nav__icon,
+.nav__link:focus > .nav__icon {
+  fill: $decorative-elements-color;
 }
 
 .nav__item {
@@ -86,12 +87,12 @@
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.4;
-  color: $black;
+  color: $heading-color;
   height: 79px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 1px solid $white;
+  border-top: 1px solid $decorative-lines-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -166,12 +167,12 @@
   }
 
   .nav__list--user .nav__item {
-    border-left: 1px solid $white;
+    border-left: 1px solid $decorative-lines-color;
   }
 
   .nav__item--search {
     width: 83px;
-    border-left: 1px solid $white;
+    border-left: 1px solid $decorative-lines-color;
   }
 
   .nav__item--search .nav__icon {
@@ -223,7 +224,7 @@
   }
 
   .nav__list--services .nav__item:not(:first-child) {
-    border-left: 1px solid $white;
+    border-left: 1px solid $decorative-lines-color;
     text-align: center;
   }
 
