@@ -33,7 +33,7 @@
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.17;
-  color: $black;
+  color: $heading-color;
   min-height: 50px;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@
   outline: none;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   text-decoration: none;
-  color: $greyish;
+  color: $content-main-color;
 }
 
 .reviews__change {
@@ -58,7 +58,7 @@
   flex-direction: row;
   height: 50px;
   margin-bottom: 40px;
-  border: 1px solid $white;
+  border: 1px solid $decorative-lines-color;
 }
 
 .reviews__change-button {
@@ -83,7 +83,7 @@
 
 .reviews__change-button--back {
   background-image: url("../img/icon-left-arrow.svg");
-  border-right: 1px solid $white;
+  border-right: 1px solid $decorative-lines-color;
 }
 
 .reviews__change-button--forward {

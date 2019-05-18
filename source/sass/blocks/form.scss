@@ -23,7 +23,7 @@
   font-size: 17px;
   line-height: 0.95;
   text-transform: uppercase;
-  color: $lazurit;
+  color: $decorative-elements-color;
   width: 100%;
   position: relative;
   margin-bottom: 36px;
@@ -38,7 +38,7 @@
     min-width: 200px;
     width: calc(100% - 62px);
     height: 1px;
-    background-color: $lazurit;
+    background-color: $decorative-elements-color;
   }
 
   .form__legend--mail::after {
@@ -80,14 +80,23 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  background-color: $ultrawhite;
-  box-shadow: 0 0 0 11px $ultrawhite, 0 0 0 12px $greyish;
+  background-color: $background-fill-color;
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $content-main-color;
 }
 
-.form__input--radio:checked + .form__label--radio::before,
-.form__input--radio:active + .form__label--radio::before {
-  background-color: $seafoam;
+.form__radio:checked + .form__label--radio::before {
+  background-color: $decorative-elements-color;
 }
+
+.form__radio:active + .form__label--radio::before {
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $decorative-lines-color;
+}
+
+.form__radio:hover + .form__label::before,
+.form__radio:focus + .form__label::before {
+  box-shadow: 0 0 0 11px $background-fill-color, 0 0 0 13px $decorative-elements-color;
+}
+
 
 .form__label--checkbox::before {
   margin-left: -60px;
@@ -95,45 +104,94 @@
   width: 38px;
   height: 38px;
   background-color: transparent;
-  box-shadow: 0 0 0 2px $greyish;
+  box-shadow: 0 0 0 2px $content-main-color;
 }
 
-.form__input--checkbox:checked + .form__label--checkbox::before,
-.form__input--checkbox:active + .form__label--checkbox::before {
+.form__checkbox:checked + .form__label--checkbox::before,
+.form__checkbox:active + .form__label--checkbox::before {
   background-position: center center;
   background-size: 22px auto;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
+.form__checkbox:active + .form__label--checkbox::before {
+  box-shadow: 0 0 0 2px $decorative-lines-color;
+}
+
+.form__checkbox:hover + .form__label::before,
+.form__checkbox:focus + .form__label::before {
+  box-shadow: 0 0 0 2px $decorative-elements-color;
+}
+
 .form__label--username {
   padding: 0;
 }
 
-.form__text-input {
+.form__input {
   background-color: transparent;
   border: none;
+  outline: none;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid $greyish;
+  border-bottom: 2px solid $content-main-color;
   margin-bottom: 25px;
-}
 
-.form__text-input::placeholder {
+  color: $heading-color;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.05;
-}
-
-.form__text-input--comment {
-  border: 1px solid $greyish;
-}
-
-.form__text-input--comment::placeholder {
   padding-left: 17px;
-  width: 80%;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $decorative-elements-color;
+  }
+
+  &:hover + .form__input-logo,
+  &:focus + .form__input-logo {
+    opacity: 1;
+    fill: $decorative-elements-color;
+  }
 }
+
+.form__input-wrapper {
+  position: relative;
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  width: 100%;
+}
+
+.form__input-logo {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  fill: $content-main-color;
+  opacity: 0.3;
+}
+
+.form__input::placeholder {
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.05;
+  color: $content-main-color;
+  opacity: 0.3;
+}
+
+.form__input--comment {
+  border: 2px solid $content-main-color;
+  outline: none;
+  resize: none;
+  overflow: auto;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $decorative-elements-color;
+  }
+}
+
 
 .form__footer {
   display: flex;
@@ -144,6 +202,8 @@
 
 .form__submit {
   width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -197,13 +257,12 @@
     padding-right: 25px;
   }
 
-  .form__text-input::placeholder {
+  .form__input::placeholder {
     background-color: transparent;
-    padding-left: 18px;
   }
 
   .form__wrapper:nth-child(2n+1) {
-    background-color: $white-two;
+    background-color: $background-fill-color;
   }
 
   .form__footer {

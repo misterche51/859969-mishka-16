@@ -13,19 +13,12 @@
   align-items: center;
 }
 
-.catalog__title {
-  font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 26.5px;
-  line-height: 1.1;
-  color: $verydarkbrown;
-}
-
 .catalog__item {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid $white;
+  border: 1px solid $decorative-lines-color;
 }
 
 .catalog__item + .catalog__item {
@@ -71,39 +64,30 @@
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   font-size: 13px;
   line-height: 2.3;
-  color: $greyish;
+  color: $content-main-color;
   padding-top: 17px;
 }
 
-.catalog__item-price {
+.catalog__item-price-wrap {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: $black;
+  color: $heading-color;
   width: 100%;
   margin-top: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid $white;
-  position: relative;
-}
-
-.catalog__item-price::after {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  right: 0;
-  background-image: url("../img/icon-cart.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  border-top: 1px solid $decorative-lines-color;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .catalog__video {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  border: 1px solid $white-two;
+  border: 1px solid $decorative-lines-color;
 }
 
 .catalog__video-title {
@@ -140,7 +124,12 @@
   height: auto;
 }
 
-.catalog__video-picture::before {
+.catalog__video-play {
+  display: block;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
   position: absolute;
   content: "";
   width: 38%;
@@ -151,6 +140,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus {
+    width: calc(38% * 1.2);
+    height: calc(51% * 1.2);
+  }
+
+  &:active {
+    width: calc(38% * 0.8);
+    height: calc(51% * 0.8);
+    opacity: 0.3;
+  }
 }
 
 .catalog__video-inner {
@@ -206,7 +207,7 @@
     line-height: 2;
   }
 
-  .catalog__item-price {
+  .catalog__item-price-wrap {
     font-size: 17px;
     line-height: 1.4;
     margin-top: auto;
@@ -242,9 +243,20 @@
     order: 0;
   }
 
-  .catalog__video-picture::before {
+  .catalog__video-play {
     width: 15.2%;
     height: 17.1%;
+
+    &:hover,
+    &:focus {
+      width: calc(15.2% * 1.2);
+      height: calc(17.1% * 1.2);
+    }
+
+    &:active {
+      width: calc(15.2% * 0.8);
+      height: calc(17.1% * 0.8);
+    }
   }
 }
 
@@ -273,6 +285,17 @@
     margin-top: 0;
   }
 
+  .catalog__item-link {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .catalog__photo-link {
     width: 100%;
   }
@@ -288,7 +311,25 @@
 
   .catalog__item:hover > .catalog__item-info,
   .catalog__item:focus > .catalog__item-info {
-    box-shadow: 0 9px 15px 1px $white-two;
+    box-shadow: 0 9px 15px 1px $decorative-lines-color;
+  }
+
+  .catalog__item-cart-link {
+    color: $decorative-lines-color;
+
+    &:hover,
+    &:focus {
+      color: $decorative-elements-color;
+    }
+
+    &:active {
+      color: $decorative-elements-color;
+      opacity: 0.3;
+    }
+  }
+
+  .catalog__item-cart-icon {
+    fill: currentColor;
   }
 
   .catalog__video {
@@ -297,12 +338,11 @@
   }
 
   .catalog__video:hover {
-    box-shadow: 0 9px 15px 1px $white-two;
+    box-shadow: 0 9px 15px 1px $decorative-lines-color;
   }
 
   .catalog__video-content {
     position: absolute;
-    z-index: -1;
     box-sizing: border-box;
     width: 100%;
     flex-direction: row-reverse;
@@ -312,6 +352,22 @@
   .catalog__video-picture {
     width: 682px;
     height: 455px;
+  }
+
+  .catalog__video-play {
+    width: 14.8%;
+    height: 16.9%;
+
+    &:hover,
+    &:focus {
+      width: calc(14.8% * 1.2);
+      height: calc(16.9% * 1.2);
+    }
+
+    &:active {
+      width: calc(14.8% * 0.8);
+      height: calc(16.9% * 0.8);
+    }
   }
 
   .catalog__video-title {
@@ -328,6 +384,7 @@
   .catalog__video-inner {
     height: 455px;
     width: 100%;
+    z-index: 5;
     max-width: 500px;
     margin-left: 760px;
     padding: 0;
