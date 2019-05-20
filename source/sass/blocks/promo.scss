@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding-top: 34px;
+  padding-top: 28px;
 }
 
 .promo::after {
@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .promo__title {
@@ -66,7 +66,7 @@
   font-size: 17px;
   line-height: 1.4;
   color: $content-main-color;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .promo__buy {
@@ -81,7 +81,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 45px;
-    padding-bottom: 68px;
+    padding-bottom: 35px;
   }
 
   .promo::after {
@@ -93,7 +93,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    z-index: 2;
+    margin-bottom: 50px;
   }
 
   .promo__title {
@@ -111,7 +111,7 @@
   .promo__text {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 50px;
+    padding-bottom: 35px;
   }
 
   .promo__inner {
@@ -123,9 +123,14 @@
     flex-wrap: wrap;
   }
 
+  .promo__description {
+    margin-bottom: 55px;
+  }
+
   .promo__photo {
     position: absolute;
     right: 0;
+    top: 5px;
     margin-left: auto;
   }
 

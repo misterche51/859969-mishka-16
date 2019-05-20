@@ -25,7 +25,9 @@
   line-height: 1.3;
   color: $background-fill-color;
   min-height: 103px;
-  padding: 30px;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 25px;
   width: 100%;
   position: relative;
   cursor: pointer;
@@ -42,14 +44,14 @@
   right: 35px;
   width: 41px;
   height: 63px;
-  background-image: url("../img/icon-interior.svg");
+  background-image: url("../img/icons/icon-interior.svg");
 }
 
 .categories__link--kids::after {
   right: 25px;
   width: 60px;
   height: 60px;
-  background-image: url("../img/icon-toy.svg");
+  background-image: url("../img/icons/icon-toy.svg");
 }
 
 @media (min-width: $tablet-width) {

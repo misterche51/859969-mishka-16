@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 65px;
+  padding-top: 58px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -13,8 +13,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .reviews__item {
@@ -39,10 +39,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 35px;
-}
-
-.reviews__author-name {
-  margin-bottom: 15px;
 }
 
 .reviews__author-link {
@@ -82,18 +78,13 @@
 }
 
 .reviews__change-button--back {
-  background-image: url("../img/icon-left-arrow.svg");
   border-right: 1px solid $decorative-lines-color;
-}
-
-.reviews__change-button--forward {
-  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 85px;
-    padding-bottom: 140px;
+    padding-top: 80px;
+    padding-bottom: 135px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
@@ -114,8 +105,8 @@
   }
 
   .reviews__list {
-    margin-top: 60px;
-    margin-bottom: 65px;
+    margin-top: 20px;
+    margin-bottom: 35px;
     order: 2;
   }
 

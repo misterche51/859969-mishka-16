@@ -20,7 +20,7 @@
           </a>
           <button class="nav__toggle-button nav__toggle-button--close"></button>
         </div>
-        <ul class="nav__list nav__list--services">
+        <!-- <ul class="nav__list nav__list--services">
           <li class="nav__item">
             <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
@@ -43,7 +43,7 @@
               </svg>
               Корзина: пока пуста</a>
           </li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <main class="main">
@@ -111,14 +111,14 @@
         </div>
       </section>
       <section class="main__section advantages">
-        <h2 class="advantages__title title">Коротко о нас</h2>
+        <h2 class="advantages__title title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-          <li class="advantages__item advantages__item--scandi">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item advantages__item--eco">Экологически чистые&nbsp;материалы</li>
+          <li class="advantages__item advantages__item--scandi">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="advantages__item advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
           <li class="advantages__item advantages__item--withlove">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item advantages__item--russian">Поддержка отечественного производителя</li>
-          <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item advantages__item--russian">Поддержка&nbsp;отечественного производителя</li>
+          <li class="advantages__item advantages__item--pack">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
       <section class="main__section reviews">
@@ -133,8 +133,16 @@
                 <a href="#" class="reviews__author-link">@misssssiskras</a>
               </p>
               <div class="reviews__change">
-                <button type="button" class="reviews__change-button reviews__change-button--back" aria-label="Перейти к предыдущему отзыву"></button>
-                <button type="button" class="reviews__change-button reviews__change-button--forward" aria-label="Перейти к следующему отзыву"></button>
+                <button type="button" class="reviews__change-button reviews__change-button--back" aria-label="Перейти к предыдущему отзыву">
+                  <svg role="img" class="reviews__change-button-icon--back" width="50" height="26">
+                    <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+                  </svg>
+                </button>
+                <button type="button" class="reviews__change-button reviews__change-button--forward" aria-label="Перейти к следующему отзыву">
+                  <svg role="img" class="reviews__change-button-icon--forward" width="50" height="26">
+                    <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+                  </svg>
+                </button>
               </div>
           </div>
           <a href="" class="reviews__button button">Написать</a>
@@ -196,7 +204,6 @@
             </li>
           </ul>
           <a href="#" class="footer__copyright-link" aria-label="Переход на сайт HTML Academy">
-            <!-- <span class="footer__copyright-title">Разработано</span> -->
             Разработано
             <svg role="img" class="footer__copyright-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>

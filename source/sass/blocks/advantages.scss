@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .advantages__list {
@@ -13,7 +13,7 @@
 
 .advantages__item {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 17.3px;
   line-height: 1.15;
   color: $content-main-color;
   min-height: 40px;
@@ -36,47 +36,49 @@
   left: 9px;
   width: 32px;
   height: 37px;
-  background-image: url("../img/icon-feature-flower.svg");
+  background-image: url("../img/icons/icon-feature-flower.svg");
 }
 
 .advantages__item--scandi::before {
   width: 47px;
   height: 27px;
-  background-image: url("../img/icon-feature-money.svg");
+  background-image: url("../img/icons/icon-feature-money.svg");
 }
 
 .advantages__item--likes::before {
   left: 8px;
+  top: 35px;
   width: 34px;
   height: 27px;
-  background-image: url("../img/icon-feature-heart.svg");
+  background-image: url("../img/icons/icon-feature-heart.svg");
 }
 
 .advantages__item--withlove::before {
   left: 3px;
   width: 35px;
   height: 34px;
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url("../img/icons/icon-feature-ball.svg");
 }
 
 .advantages__item--russian::before {
   left: -7px;
+  top: 35px;
   width: 55px;
   height: 23px;
-  background-image: url("../img/icon-feature-rocket.svg");
+  background-image: url("../img/icons/icon-feature-rocket.svg");
 }
 
 .advantages__item--pack::before {
   left: 2px;
   width: 33px;
   height: 32px;
-  background-image: url("../img/icon-feature-gift.svg");
+  background-image: url("../img/icons/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
     @include centering-tablet;
-    padding-top: 60px;
+    padding-top: 45px;
     padding-bottom: 80px;
   }
 
@@ -86,8 +88,10 @@
   }
 
   .advantages__item {
+    font-size: 20px;
     width: 50%;
-    margin-top: 100px;
+    margin-top: 20px;
+    line-height: 1.2;
     padding-right: 10%;
   }
 
@@ -95,16 +99,24 @@
     order: 2;
   }
 
+  .advantages__item--russian {
+    order: 3;
+  }
+
   .advantages__item--likes {
     order: 4;
   }
 
-  .advantages__item--withlove {
-    order: 1;
+  .advantages__item--pack {
+    order: 5;
   }
 
-  .advantages__item--russian {
-    order: 3;
+  .advantages__item--likes::before {
+    top: 40px;
+  }
+
+  .advantages__item--pack::before {
+    top: 35px;
   }
 }
 
