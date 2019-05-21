@@ -142,7 +142,7 @@
   margin-bottom: 20px;
 }
 
-.form__container--username .form__row:last-of-type {
+.form__row:last-of-type {
   margin-bottom: 5px;
 }
 
@@ -248,36 +248,92 @@
   .form__description {
     @include centering-tablet;
 
-
-    padding-left: 50px;
+    padding: 50px;
     padding-top: 70px;
-    padding-bottom: 50px;
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 1.9;
   }
 
   .form__fieldset {
     @include centering-tablet;
 
 
-    padding: 65px 50px 20px 217px;
+    padding: 65px 50px 15px 217px;
     flex-direction: row;
     position: relative;
+  }
+
+  .form__label {
+    font-size: 19px;
+    padding-left: 80px;
+  }
+
+  .form__fieldset--categories {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .form__fieldset--username {
+    padding-left: 130px;
+  }
+
+  .form__fieldset--categories .form__legend {
+    top: 25px;
   }
 
   .form__legend {
     position: absolute;
     left: 50px;
     width: calc(100% - 50px);
-    top: 81px;
+    top: 70px;
   }
 
-  .form__container {
-    flex-flow: row wrap;
+  .form__label--radio {
+    margin-bottom: 60px;
+  }
+
+  .form__label--radio::before {
+    margin-left: -65px;
+    width: 22px;
+    height: 22px;
+    box-shadow: 0 0 0 13px $background-fill-color, 0 0 0 15px $content-main-color;
+  }
+
+  .form__radio:active + .form__label--radio::before {
+    box-shadow: 0 0 0 13px $background-fill-color, 0 0 0 15px $decorative-lines-color;
+  }
+
+  .form__radio:hover + .form__label::before,
+  .form__radio:focus + .form__label::before {
+    box-shadow: 0 0 0 13px $background-fill-color, 0 0 0 15px $decorative-elements-color;
   }
 
   .form__label--checkbox {
     width: 50%;
+    margin-bottom: 55px;
+    line-height: 1.1;
+  }
+
+  .form__label--checkbox:nth-of-type(2n) {
+    padding-left: 90px;
+  }
+
+  .form__label--checkbox::before {
+    margin-left: -80px;
+    margin-top: -12px;
+    width: 51px;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: 0 0 0 2px $content-main-color;
+  }
+
+  .form__checkbox:checked + .form__label--checkbox::before,
+  .form__checkbox:active + .form__label--checkbox::before {
+    background-size: 33px auto;
+  }
+
+  .form__container {
+    flex-flow: row wrap;
   }
 
   .form__row {
@@ -285,22 +341,66 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: baseline;
+    margin-bottom: 25px;
+  }
+
+  .form__row:last-of-type {
+    margin-bottom: 35px;
   }
 
   .form__label--username {
+    padding-left: 90px;
     padding-right: 25px;
   }
 
   .form__input {
+    font-size: 19px;
     padding-left: 17px;
+    padding-top: 11px;
+    padding-bottom: 10px;
   }
 
   .form__input::placeholder {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: transparent;
   }
 
   .form__wrapper:nth-child(2n+1) {
     background-color: $background-fill-decorative-color;
+  }
+
+  .form__input--tel {
+    margin-top: 15px;
+  }
+
+  .form__input-logo {
+    right: 18px;
+    top: 22px;
+  }
+
+  .form__legend--mail {
+    top: 20px;
+  }
+
+  .form__input-wrapper--email {
+    margin-top: -60px;
+    padding-bottom: 35px;
+  }
+
+  .form__input-logo--email {
+    top: 10px;
+    right: 20px;
+  }
+
+  .form__input--comment {
+    padding: 17px;
+    padding-bottom: 0;
+  }
+
+  .form__input--comment::placeholder {
+    padding: 0;
   }
 
   .form__footer {
@@ -309,6 +409,7 @@
 
     flex-direction: row-reverse;
     padding: 0 50px;
+    padding-top: 45px;
   }
 
   .form__submit {
@@ -319,6 +420,7 @@
   .form__footnote {
     width: 50%;
     text-align: right;
+    font-size: 17px;
   }
 }
 

@@ -150,7 +150,7 @@
     @include centering;
 
 
-    min-height: 800px;
+    min-height: 765px;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
@@ -167,7 +167,8 @@
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    top: 130px;
+    top: 125px;
+    z-index: 2;
   }
 
   .promo__label {
@@ -176,14 +177,25 @@
     margin-right: 30px;
   }
 
+  .promo__title {
+    margin-left: 10px;
+  }
+
   .promo__inner {
-    padding-left: 160px;
+    padding-left: 175px;
+    padding-right: calc(50% + 60px);
+    padding-bottom: 20px;
   }
 
   .promo__description {
     padding-top: 160px;
-    padding-bottom: 95px;
+    padding-bottom: 110px;
     margin-bottom: 0;
+  }
+
+  .promo__text {
+    padding-right: 0;
+    padding-bottom: 45px;
   }
 
   .promo__image {

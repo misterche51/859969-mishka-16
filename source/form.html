@@ -64,7 +64,7 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--categories">
             <legend class="form__legend">Тип</legend>
             <div class="form__container">
               <input type="radio" class="form__radio visually-hidden" id="home-decor" name="type" value="home-decor" checked>
@@ -94,7 +94,7 @@
           </fieldset>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--username">
             <legend class="form__legend">Фио</legend>
             <div class="form__container form__container--username">
               <div class="form__row">
@@ -124,7 +124,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--mail">e-mail</legend>
-            <p class="form__input-wrapper">
+            <p class="form__input-wrapper form__input-wrapper--email">
               <input type="email" class="form__input" name="email" id="email" placeholder="Ваш Email*">
               <svg class="form__input-logo form__input-logo--email" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -135,7 +135,7 @@
         <div class="form__wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">доп</legend>
-            <textarea class="form__input form__input--comment" rows="7" name="more-info" id="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__input form__input--comment" rows="6" name="more-info" id="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <div class="form__footer">
             <p class="form__footnote">*Поля обязательны для заполнения</p>

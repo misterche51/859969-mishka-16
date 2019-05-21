@@ -124,6 +124,24 @@
   .advantages {
     @include centering;
 
-    padding: 70px 195px 85px 195px;
+    padding: 60px 195px 85px 220px;
+  }
+
+  .advantages__item {
+    width: 48%;
+    line-height: 1.1;
+    margin-top: 23px;
+  }
+
+  .advantages__item::before {
+    left: 5px;
+  }
+
+  .advantages__item--russian::before {
+    left: 0;
+  }
+
+  .advantages__item--withlove::before {
+    left: 10px;
   }
 }
