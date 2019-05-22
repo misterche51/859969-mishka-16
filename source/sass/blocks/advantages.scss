@@ -124,7 +124,7 @@
   .advantages {
     @include centering;
 
-    padding: 60px 195px 85px 220px;
+    padding: 60px 195px 95px 220px;
   }
 
   .advantages__item {
@@ -141,7 +141,9 @@
     left: 0;
   }
 
-  .advantages__item--withlove::before {
+  .advantages__item--eco::before,
+  .advantages__item--withlove::before,
+  .advantages__item--likes::before {
     left: 10px;
   }
 }

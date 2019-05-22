@@ -105,8 +105,8 @@
   }
 
   .reviews__list {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    padding-top: 45px;
+    padding-bottom: 65px;
     order: 2;
   }
 
@@ -157,7 +157,10 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include centering;
+
     background-position: 50px 0;
+    padding-top: 70px;
+    padding-bottom: 185px;
   }
 
   .reviews::after {
@@ -168,11 +171,20 @@
     @include centering;
 
     margin: 0;
-    padding-left: 150px;
+    padding-left: 170px;
+  }
+
+  .reviews__list {
+    padding: 40px 100px 40px 0;
+  }
+
+  .reviews__item {
+    line-height: 1.86;
   }
 
   .reviews__button {
     width: 16.6%;
+    margin-top: 10px;
   }
 
   .reviews__change {

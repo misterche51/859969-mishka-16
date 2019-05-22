@@ -12,6 +12,10 @@
   display: none;
 }
 
+.popup--show {
+  display: block;
+}
+
 .popup__form {
   display: flex;
   flex-flow: column nowrap;
