@@ -70,7 +70,7 @@
     min-height: 119px;
     padding: 25px;
     padding-left: 36px;
-    font-size: 20px;
+    font-size: $fs-large;
     line-height: 1.5;
     position: relative;
 
@@ -78,6 +78,7 @@
     &:focus {
       top: -5px;
       padding-bottom: 30px;
+      height: calc(100% + 10px);
     }
 
     &:active {

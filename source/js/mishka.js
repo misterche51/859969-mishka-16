@@ -1,17 +1,21 @@
 var buy = document.querySelector(".promo__buy");
-var popupToCart = document.querySelector(".popup--to-cart")
+var background = document.querySelector(".background");
+
+var popup = document.querySelector(".popup");
 
 buy.addEventListener("click", onPopupShow);
 
+
 function onPopupShow(evt) {
   evt.preventDefault();
-  popupToCart.classList.add("popup--show");
+  popup.classList.add("popup--show");
+  background.classList.add("background--active");
   window.addEventListener("keydown", onPopupEscapePress);
 }
 
 function onPopupClose(evt) {
   evt.preventDefault();
-  popupToCart.remove("popup--show");
+  popup.remove("popup--show");
 }
 
 function onPopupEscapePress(evt) {

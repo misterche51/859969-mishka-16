@@ -26,7 +26,7 @@
 .promo__label {
   text-transform: uppercase;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.17;
   color: $decorative-elements-color;
   text-align: center;
@@ -43,7 +43,7 @@
 
 .promo__text {
   margin: 0;
-  font-size: 15px;
+  font-size: $fs-small;
   line-height: 1.6;
 }
 
@@ -63,7 +63,7 @@
 
 .promo__price {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $content-main-color;
   margin-bottom: 25px;
@@ -109,7 +109,7 @@
   }
 
   .promo__text {
-    font-size: 17px;
+    font-size: $fs-middle;
     line-height: 1.76;
     padding-bottom: 35px;
   }
@@ -140,7 +140,7 @@
 
   .promo__price {
     margin-bottom: 35px;
-    font-size: 20px;
+    font-size: $fs-large;
     line-height: 1.2;
   }
 }
@@ -154,7 +154,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 70px;
+    padding-top: 122px;
   }
 
   .promo::after {
@@ -166,7 +166,6 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
     top: 125px;
     z-index: 2;
   }
@@ -188,7 +187,6 @@
   }
 
   .promo__description {
-    padding-top: 160px;
     padding-bottom: 110px;
     margin-bottom: 0;
   }
@@ -201,6 +199,10 @@
   .promo__image {
     width: 525px;
     height: 635px;
+  }
+
+  .promo__photo {
+    top: -160px;
   }
 
   .promo__photo img {

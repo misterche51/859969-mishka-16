@@ -53,7 +53,7 @@
   outline: none;
   text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
   height: 100%;
@@ -85,7 +85,7 @@
 .nav__item {
   text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
   height: 79px;
@@ -140,7 +140,7 @@
 
   @media (max-width: 1124px) {
     .nav__list--services .nav__link {
-      font-size: 15px;
+      font-size: $fs-small;
       line-height: 1.6;
       padding-top: 20px;
     }
@@ -200,7 +200,7 @@
   }
 
   .nav__logo img {
-    width: 149px;
+    width: 170px;
   }
 
   .nav__logo-link {

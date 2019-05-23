@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MISHKA - каталог</title>
+    <script src="svgxuse.js" defer></script>
     <link rel="preload" href="opensans.woff2" as="font">
     <link rel="preload" href="opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/normalize.css">
@@ -22,7 +23,7 @@
               </a>
               <button class="nav__toggle-button nav__toggle-button--close"></button>
             </div>
-            <!-- <ul class="nav__list nav__list--services">
+            <ul class="nav__list nav__list--services">
               <li class="nav__item">
                 <a class="nav__link">Каталог товаров</a>
               </li>
@@ -45,7 +46,7 @@
                   </svg>
                   Корзина: пока пуста</a>
               </li>
-            </ul> -->
+            </ul>
           </nav>
       </header>
     <main class="main">
@@ -53,7 +54,7 @@
             <div class="main__promo">
               <ul class="main__promo-nav">
                 <li class="main__promo-item">
-                  <a href="" class="main__promo-link">Новое поступление</a>
+                  <a href="" class="main__promo-link">Новые поступления</a>
                 </li>
                 <li class="main__promo-item">
                   <a href="" class="main__promo-link">Распродажа</a>
@@ -67,14 +68,16 @@
         <div class="catalog__list">
           <div class="catalog__item">
             <a href="#" class="catalog__photo-link">
-              <picture class="catalog__picture">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__photo" width="260" height="195">
-              </picture>
+              <div class="catalog__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Милый серый зайчик в голубом комбинезоне" class="catalog__photo" width="260" height="195">
+                </picture>
+              </div>
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -94,14 +97,16 @@
           </div>
           <div class="catalog__item">
             <a href="#" class="catalog__photo-link">
-              <picture class="catalog__picture">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
-                <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка из пряжи розового и белого цвета" class="catalog__photo" width="260" height="195">
-              </picture>
+              <div class="catalog__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка из пряжи розового и белого цвета" class="catalog__photo" width="260" height="195">
+                </picture>
+              </div>
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -121,14 +126,17 @@
           </div>
           <div class="catalog__item">
             <a href="#" class="catalog__photo-link">
-              <picture class="catalog__picture">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
-                <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__photo" width="260" height="195">
-              </picture>
+              <div class="catalog__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+                  <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка из пряжи зеленого и белого цвета, внурь которой помещается большое количество детских игрушек небольшого размера" class="catalog__photo" width="260" height="195">
+                </picture>
+              </div>
+
             </a>
             <div class="catalog__item-info">
               <a href="#" class="catalog__item-link">
@@ -205,5 +213,22 @@
           </a>
         </div>
     </footer>
+    <section class="popup popup--to-cart">
+      <form class="popup__form">
+        <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+        <fieldset class="popup__fieldset">
+          <legend class="popup__legend">Выберете размер:</legend>
+          <div class="popup__buttons">
+            <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+            <label class="popup__label" for="small">s</label>
+            <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+            <label class="popup__label" for="middle">m</label>
+            <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+            <label class="popup__label" for="large">l</label>
+          </div>
+        </fieldset>
+        <button type="submit" class="popup__submit button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

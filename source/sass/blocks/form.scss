@@ -22,7 +22,7 @@
 
 .form__legend {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 0.95;
   text-transform: uppercase;
   color: $decorative-elements-color;
@@ -57,7 +57,7 @@
 
 .form__label {
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.04;
   padding-left: 62px;
   position: relative;
@@ -158,7 +158,7 @@
 
   color: $heading-color;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.05;
 
   &:hover,
@@ -196,7 +196,7 @@
 
 .form__input::placeholder {
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.05;
   color: $content-main-color;
   opacity: 0.3;
@@ -250,7 +250,7 @@
 
     padding: 50px;
     padding-top: 70px;
-    font-size: 17px;
+    font-size: $fs-middle;
     line-height: 1.9;
   }
 
@@ -422,7 +422,7 @@
   .form__footnote {
     width: 50%;
     text-align: right;
-    font-size: 17px;
+    font-size: $fs-middle;
   }
 }
 

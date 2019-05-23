@@ -63,7 +63,7 @@
   height: 100%;
   width: 100%;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
 
@@ -128,7 +128,7 @@
     @include centering;
 
 
-    font-size: 15px;
+    font-size: $fs-small;
     line-height: 1.6;
     min-height: 66px;
     display: flex;
@@ -153,8 +153,9 @@
   }
 
   .main__header::after {
-    bottom: -17px;
-    height: 34px;
+    background-size: 1250px 37px;
+    bottom: -18px;
+    height: 37px;
   }
 
   .main__header--index {
@@ -173,7 +174,11 @@
   }
 
   .main__header--index .main__title {
-    padding: 85px 250px 360px 250px;
+    padding: 85px 250px 358px 250px;
+  }
+
+  .main-promo {
+    min-height: 59px;
   }
 
   .main__promo-nav {
@@ -182,12 +187,21 @@
   }
 
   .main__promo-item {
-    padding: 0;
-    width: 33.3%;
-    min-width: 185px;
+    padding: 0 10px 0 33px;
+    width: auto;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
   .main__promo-item:not(:first-child) {
     text-align: center;
+    padding-left: 55px;
+  }
+
+  .main__promo-link {
+    font-size: $fs-small;
+    margin-top: -5px;
   }
 }

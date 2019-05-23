@@ -18,7 +18,7 @@
 }
 
 .reviews__item {
-  font-size: 15px;
+  font-size: $fs-small;
   line-height: 2;
 }
 
@@ -31,7 +31,7 @@
   margin: 0;
   padding: 0;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.17;
   color: $heading-color;
   min-height: 50px;
@@ -111,7 +111,7 @@
   }
 
   .reviews__item {
-    font-size: 17px;
+    font-size: $fs-middle;
     line-height: 1.76;
   }
 
@@ -175,7 +175,7 @@
   }
 
   .reviews__list {
-    padding: 40px 100px 40px 0;
+    padding: 40px 100px 45px 0;
   }
 
   .reviews__item {

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>MISHKA - изделия ручной работы для дома</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="svgxuse.js" defer></script>
+    <link rel="preload" href="opensans.woff2" as="font">
+    <link rel="preload" href="opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -20,7 +23,7 @@
           </a>
           <button class="nav__toggle-button nav__toggle-button--close"></button>
         </div>
-        <!-- <ul class="nav__list nav__list--services">
+        <ul class="nav__list nav__list--services">
           <li class="nav__item">
             <a href="catalog.html" class="nav__link">Каталог товаров</a>
           </li>
@@ -43,7 +46,7 @@
               </svg>
               Корзина: пока пуста</a>
           </li>
-        </ul> -->
+        </ul>
       </nav>
     </header>
     <main class="main">
@@ -51,7 +54,7 @@
         <div class="main__promo">
           <ul class="main__promo-nav">
             <li class="main__promo-item">
-              <a href="" class="main__promo-link">Новое поступление</a>
+              <a href="" class="main__promo-link">Новые поступления</a>
             </li>
             <li class="main__promo-item">
               <a href="" class="main__promo-link">Распродажа</a>
@@ -96,14 +99,16 @@
               </tbody>
             </table>
           </div>
-          <picture class="promo__photo">
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="promo__photo-image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
-          </picture>
+          <div class="promo__photo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="promo__photo-image" alt="Уютные круглые корзинки из пряжи серого цвета в сочетании с пряжей пастельных цветов" width="260" height="315">
+            </picture>
+          </div>
           <div class="promo__customer-info">
             <span class="promo__price">Цена: 990 руб.</span>
             <a href="" class="promo__buy button">Заказать</a>
@@ -162,14 +167,16 @@
               </div>
             </div>
           </div>
-          <picture class="contacts__map">
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте Москвы" class="contacts__map-image" width="320" height="457">
-          </picture>
+          <div class="contacts__map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте Москвы" class="contacts__map-image" width="320" height="457">
+            </picture>
+          </div>
           <a href="" class="contacts__button button">Напишите&nbsp;нам</a>
       </section>
     </main>
@@ -211,23 +218,27 @@
           </a>
         </div>
     </footer>
-    <section class="popup popup--to-cart">
-      <form class="popup__form">
-        <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
-        <fieldset class="popup__fieldset">
-          <legend class="popup__legend">Выберете размер:</legend>
-          <div class="popup__buttons">
-            <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
-            <label class="popup__label" for="small">s</label>
-            <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
-            <label class="popup__label" for="middle">m</label>
-            <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
-            <label class="popup__label" for="large">l</label>
-          </div>
-        </fieldset>
-        <button type="submit" class="popup__submit button">Добавить</button>
-      </form>
-    </section>
+    <div class="background">
+      <section class="popup popup--to-cart">
+          <form class="popup__form">
+            <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+            <fieldset class="popup__fieldset">
+              <legend class="popup__legend">Выберете размер:</legend>
+              <div class="popup__buttons">
+                <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+                <label class="popup__label" for="small">s</label>
+                <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+                <label class="popup__label" for="middle">m</label>
+                <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+                <label class="popup__label" for="large">l</label>
+              </div>
+            </fieldset>
+            <button type="submit" class="popup__submit button">Добавить</button>
+          </form>
+      </section>
+      </div>
+
+
     <script src="js/mishka.js"></script>
   </body>
 </html>
