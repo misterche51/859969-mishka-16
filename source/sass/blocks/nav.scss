@@ -49,6 +49,17 @@
   padding: 0;
 }
 
+
+@media (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__list--opened {
+  display: block;
+}
+
 .nav__link {
   outline: none;
   text-decoration: none;

@@ -52,12 +52,15 @@
 
 .catalog__item-link {
   cursor: pointer;
+  display: block;
+  width: 100%;
 }
 
 .catalog__item-name {
   @include catalog-title;
 
   padding-top: 28px;
+  hyphens: auto;
 }
 
 .catalog__item-params {
@@ -411,7 +414,7 @@
     margin-left: 760px;
     padding: 0;
     padding-top: 30px;
-    padding-right: 70px;
+    padding-right: 57px;
   }
 
   .catalog__video-button {

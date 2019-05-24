@@ -4,9 +4,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 5;
-  background-color: $background-fill-color;
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255 ,0.5);
+  overflow: hidden;
   display: none;
 }
 

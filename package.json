@@ -46,6 +46,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "picturefill": "^3.0.2",
     "svgxuse": "^1.2.6"
   }
 }
