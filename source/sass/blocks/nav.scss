@@ -41,6 +41,10 @@
   background-image: url("../img/icons/icon-menu-close.svg");
 }
 
+.nav__toggle-button .no-js {
+  display: none;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
@@ -54,10 +58,14 @@
   .nav__list {
     display: none;
   }
+
+  .no-js {
+    display: flex;
+  }
 }
 
 .nav__list--opened {
-  display: block;
+  display: flex;
 }
 
 .nav__link {

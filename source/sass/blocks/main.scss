@@ -95,7 +95,7 @@
   .main__header::after {
     position: absolute;
     content: "";
-    bottom: -12px;
+    bottom: -8px;
     width: 100%;
     height: 24px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -154,7 +154,7 @@
 
   .main__header::after {
     background-size: 1250px 37px;
-    bottom: -18px;
+    bottom: -15px;
     height: 37px;
   }
 
