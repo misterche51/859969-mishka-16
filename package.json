@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "del": "^4.1.1",
-    "picturefill": "^3.0.2",
+    "picturefill": "^3.0.3",
     "svgxuse": "^1.2.6"
   }
 }
