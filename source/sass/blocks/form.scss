@@ -250,7 +250,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-bottom: 50px;
+    padding-bottom: 37px;
   }
 
   .form__description {
@@ -501,7 +501,7 @@
   }
 
   .form__fieldset--comment {
-    padding-top: 60px;
+    padding-top: 63px;
   }
 
   .form__input--comment {
@@ -520,5 +520,6 @@
   .form__submit {
     padding-left: 30px;
     padding-right: 30px;
+    align-self: flex-start;
   }
 }
