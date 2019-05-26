@@ -69,6 +69,7 @@
   margin: 0 -30px;
   margin-top: 35px;
   position: relative;
+  overflow: hidden;
 }
 
 .contacts__map-yandex {
@@ -119,7 +120,7 @@
   }
 
   .contacts__info {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100%;
     min-height: 80px;
     flex-direction: row;

@@ -22,32 +22,36 @@
                   <img src="img/logo-mobile.svg" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
                 </picture>
               </a>
-              <button class="nav__toggle-button nav__toggle-button--open"></button>
+              <button class="nav__toggle-button no-js"></button>
             </div>
-              <ul class="nav__list nav__list--services">
-                <li class="nav__item">
-                  <a href="catalog.html" class="nav__link">Каталог товаров</a>
-                </li>
-                <li class="nav__item">
-                  <a href="form.html" class="nav__link">Вязание на заказ</a>
-                </li>
-              </ul>
-              <ul class="nav__list nav__list--user">
-                <li class="nav__item nav__item--search">
-                  <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
-                    <svg role="img" class="nav__icon" width="18" height="18">
+            <ul class="nav__list nav__list--services no-js">
+              <li class="nav__item">
+                <a href="catalog.html" class="nav__link">Каталог товаров</a>
+              </li>
+              <li class="nav__item">
+                <a href="form.html" class="nav__link">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--user no-js">
+              <li class="nav__item nav__item--search">
+                <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
+                  <span class="nav__icon">
+                    <svg role="img" class="nav__icon-svg" width="18" height="18">
                       <use xlink:href="img/sprite.svg#icon-search"></use>
                     </svg>
-                    Поиск</a>
-                </li>
-                <li class="nav__item nav__item--cart">
-                  <a href="" class="nav__link" aria-label="Перейти в корзину">
-                    <svg role="img" class="nav__icon" width="18" height="18">
+                  </span>
+                  Поиск</a>
+              </li>
+              <li class="nav__item nav__item--cart">
+                <a href="" class="nav__link" aria-label="Перейти в корзину">
+                  <span class="nav__icon">
+                    <svg role="img" class="nav__icon-svg" width="18" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
-                    Корзина: пока пуста</a>
+                  </span>
+                  Корзина: пока пуста</a>
                 </li>
-              </ul>
+            </ul>
           </nav>
       </header>
     <main class="main">
@@ -156,36 +160,56 @@
             </svg>
           </a>
           <ul class="footer__social">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм">
-                <svg role="img" class="footer__social-logo" width="22" height="21">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук">
-                <svg role="img" class="footer__social-logo" width="15" height="28">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер">
-                <svg role="img" class="footer__social-logo" width="23" height="20">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Мы в Инстаграм">
+                  <svg role="img" class="footer__social-logo" width="22" height="21">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Мы в Фейсбук">
+                  <svg role="img" class="footer__social-logo" width="15" height="28">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Мы в Твиттер">
+                  <svg role="img" class="footer__social-logo" width="23" height="20">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
           </ul>
-          <a href="#" class="footer__copyright-link" aria-label="Переход на сайт HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link" aria-label="Переход на сайт HTML Academy">
             Разработано
-            <svg role="img" class="footer__copyright-logo" width="27" height="34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-            </svg>
+            <span class="footer__copyright-logo">
+              <svg role="img" class="footer__copyright-logo-svg" width="27" height="34">
+                <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              </svg>
+            </span>
           </a>
         </div>
     </footer>
+    <div class="overlay"></div>
+    <section class="popup popup--to-cart">
+        <form class="popup__form" action="https://echo.htmlacademy.ru/" method="push">
+          <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+          <fieldset class="popup__fieldset">
+            <legend class="popup__legend">Выберете размер:</legend>
+            <div class="popup__buttons">
+              <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+              <label class="popup__label" for="small">s</label>
+              <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+              <label class="popup__label" for="middle">m</label>
+              <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+              <label class="popup__label" for="large">l</label>
+            </div>
+          </fieldset>
+          <button type="submit" class="popup__submit button">Добавить</button>
+        </form>
+    </section>
   <script src="js/mishka.js"></script>
   </body>
 </html>

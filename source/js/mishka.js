@@ -5,6 +5,8 @@ var overlay = document.querySelector(".overlay");
 var popup = document.querySelector(".popup");
 var form = popup.querySelector("form");
 
+
+
 if (buy !== null) {
   buy.addEventListener("click", onPopupShow);
 }
@@ -52,7 +54,6 @@ menuListUser.classList.remove("no-js");
 menuListServ.classList.remove("no-js");
 menuBtn.addEventListener("click", menuShow);
 
-
 function menuShow(evt) {
   evt.preventDefault();
   menuListServ.classList.toggle("nav__list--opened");
@@ -63,7 +64,7 @@ function menuShow(evt) {
 ymaps.ready(function () {
   var map = new ymaps.Map("map", {
     center: [59.938631, 30.323055],
-    zoom: 20,
+    zoom: 15,
     controls: ["zoomControl","searchControl"]
   });
   pointer = new ymaps.Placemark(map.getCenter(), {}, {

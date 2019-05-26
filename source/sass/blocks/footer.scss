@@ -81,12 +81,16 @@
   align-items: center;
 }
 
-.footer__copyright-logo {
+.footer__copyright-logo svg {
   fill: currentColor;
-  margin-left: 30px;
 }
 
-.footer__copyright-link:hover .footer__copyright-wrap {
+.footer__copyright-logo {
+  margin-left: 30px;
+  color: $decorative-elements-color;
+}
+
+.footer__copyright-link:hover .footer__copyright-logo {
   color: $categories-second-color;
 }
 
@@ -129,7 +133,7 @@
   .footer__social {
     border: none;
     padding-top: 10px;
-    padding-left: 45px;
+    padding-left: 80px;
   }
 
   .footer__copyright-link {

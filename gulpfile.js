@@ -71,18 +71,6 @@ gulp.task("sprite", function () {
         $('[stroke]').removeAttr('stroke');
       },
       parserOptions: {xmlMode: true}
-    })).pipe(svgClean({
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-      },
-      parserOptions: {xmlMode: true}
-    })).pipe(svgClean({
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-      },
-      parserOptions: {xmlMode: true}
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));

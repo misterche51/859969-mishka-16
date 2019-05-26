@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 .form__description {
@@ -215,6 +215,7 @@
   resize: none;
   overflow: auto;
   margin-top: -10px;
+  padding-bottom: 25px;
 
   &:hover,
   &:focus {
@@ -277,7 +278,7 @@
 
   .form__fieldset--categories {
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
   }
 
   .form__fieldset--username {
@@ -296,7 +297,7 @@
   }
 
   .form__label--radio {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
   .form__label--radio::before {
@@ -405,7 +406,7 @@
 
   .form__input--comment {
     padding: 17px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
 
   .form__input--comment::placeholder {
@@ -418,7 +419,7 @@
 
     flex-direction: row-reverse;
     padding: 0 50px;
-    padding-top: 45px;
+    padding-top: 35px;
   }
 
   .form__submit {
