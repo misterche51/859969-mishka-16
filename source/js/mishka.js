@@ -4,6 +4,8 @@ var buyCatalogCart = document.querySelectorAll(".catalog__item-cart-link");
 var overlay = document.querySelector(".overlay");
 var popup = document.querySelector(".popup");
 var form = popup.querySelector("form");
+var menu = document.querySelector(".nav");
+var menuToggle = document.querySelector(".nav__toggle-button");
 
 
 
@@ -43,22 +45,12 @@ function onPopupEscapePress(evt) {
   }
 }
 
-var menuBtn = document.querySelector(".nav__toggle-button");
-var menuListServ = document.querySelector(".nav__list--services");
-var menuListUser = document.querySelector(".nav__list--user");
-
-menuBtn.classList.remove("no-js");
-menuBtn.classList.add("nav__toggle-button--open");
-
-menuListUser.classList.remove("no-js");
-menuListServ.classList.remove("no-js");
-menuBtn.addEventListener("click", menuShow);
+menu.classList.remove("nav--no-js");
+menuToggle.addEventListener("click", menuShow);
 
 function menuShow(evt) {
   evt.preventDefault();
-  menuListServ.classList.toggle("nav__list--opened");
-  menuListUser.classList.toggle("nav__list--opened");
-  menuBtn.classList.toggle("nav__toggle-button--close");
+  menu.classList.toggle("nav--opened");
 }
 
 ymaps.ready(function () {
