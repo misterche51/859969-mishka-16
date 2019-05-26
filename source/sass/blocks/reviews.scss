@@ -175,7 +175,11 @@
   }
 
   .reviews__list {
-    padding: 40px 100px 40px 0;
+    padding: 40px 100px 35px 5px;
+  }
+
+  .reviews__author-name {
+    padding-bottom: 5px;
   }
 
   .reviews__item {
@@ -188,6 +192,7 @@
   }
 
   .reviews__change {
+    padding-top: 13px;
     width: 16.6%;
   }
 }

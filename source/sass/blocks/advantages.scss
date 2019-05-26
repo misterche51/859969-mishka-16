@@ -131,6 +131,12 @@
     width: 48%;
     line-height: 1.1;
     margin-top: 23px;
+    padding-left: 5px;
+    padding-top: 83px;
+  }
+
+  .advantages__item:nth-child(3n + 2) {
+    padding-top: 88px;
   }
 
   .advantages__item::before {
@@ -138,12 +144,20 @@
   }
 
   .advantages__item--russian::before {
-    left: 0;
+    left: -5px;
   }
 
-  .advantages__item--eco::before,
-  .advantages__item--withlove::before,
+  .advantages__item--eco::before {
+    top: 25px;
+    left: 15px;
+  }
+
+  .advantages__item--withlove::before {
+    left: 6px;
+  }
+
   .advantages__item--likes::before {
-    left: 10px;
+    top: 37px;
+    left: 15px;
   }
 }

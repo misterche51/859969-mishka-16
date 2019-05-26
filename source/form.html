@@ -12,48 +12,48 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-      <header class="header">
-          <nav class="nav nav--no-js">
-            <div class="nav__logo">
-              <a href="index.html" class="nav__logo-link">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                  <img src="img/logo-mobile.svg" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
-                </picture>
-              </a>
-              <button class="nav__toggle-button"></button>
-            </div>
-            <ul class="nav__list nav__list--services">
-              <li class="nav__item">
-                <a href="catalog.html" class="nav__link">Каталог товаров</a>
-              </li>
-              <li class="nav__item">
-                <a href="form.html" class="nav__link">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="nav__list nav__list--user">
-              <li class="nav__item nav__item--search">
-                <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
-                  <span class="nav__icon">
-                    <svg role="img" class="nav__icon-svg" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#icon-search"></use>
-                    </svg>
-                  </span>
-                  Поиск</a>
-              </li>
-              <li class="nav__item nav__item--cart">
-                <a href="" class="nav__link" aria-label="Перейти в корзину">
-                  <span class="nav__icon">
-                    <svg role="img" class="nav__icon-svg" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#icon-cart"></use>
-                    </svg>
-                  </span>
-                  Корзина: пока пуста</a>
-                </li>
-            </ul>
-          </nav>
-      </header>
+    <header class="header">
+      <nav class="nav nav--no-js">
+        <div class="nav__logo">
+          <a href="index.html" class="nav__logo-link">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип магазина MISHKA" class="nav__logo-image" width="86" height="35">
+            </picture>
+          </a>
+          <button class="nav__toggle-button"></button>
+        </div>
+        <ul class="nav__list nav__list--services">
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Каталог товаров</a>
+          </li>
+          <li class="nav__item">
+            <a href="form.html" class="nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--user">
+          <li class="nav__item nav__item--search">
+            <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
+              <span class="nav__icon">
+                <svg role="img" class="nav__icon-svg" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </span>
+              Поиск</a>
+          </li>
+          <li class="nav__item nav__item--cart">
+            <a href="" class="nav__link" aria-label="Перейти в корзину">
+              <span class="nav__icon">
+                <svg role="img" class="nav__icon-svg" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </span>
+              Корзина: пока пуста</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main">
       <div class="main__header">
             <div class="main__sales">
@@ -73,7 +73,7 @@
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--categories">
-            <legend class="form__legend">Тип</legend>
+            <legend class="form__legend form__legend--categories">Тип</legend>
             <div class="form__container">
               <input type="radio" class="form__radio visually-hidden" id="home-decor" name="type" value="home-decor" checked>
               <label class="form__label--radio form__label" for="home-decor">Аксессуар для интерьера</label>
@@ -84,7 +84,7 @@
         </div>
         <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--checkbox">
-            <legend class="form__legend">Цвет</legend>
+            <legend class="form__legend form__legend--checkox">Цвет</legend>
             <div class="form__container">
               <input type="checkbox" class="visually-hidden form__checkbox" name="color" value="white" id="filter-color-white" checked>
               <label class="form__label--checkbox form__label" for="filter-color-white">Белый</label>
@@ -194,7 +194,7 @@
     </footer>
     <div class="overlay"></div>
     <section class="popup popup--to-cart">
-        <form class="popup__form" action="https://echo.htmlacademy.ru/" method="push">
+        <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
           <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
           <fieldset class="popup__fieldset">
             <legend class="popup__legend">Выберете размер:</legend>
