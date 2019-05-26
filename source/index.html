@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="js/picturefill.min.js"></script>
     <script defer src="js/svgxuse.min.js"></script>
-    <link rel="preload" href="opensans.woff2" as="font">
-    <link rel="preload" href="opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -35,16 +35,20 @@
           <ul class="nav__list nav__list--user no-js">
             <li class="nav__item nav__item--search">
               <a href="" class="nav__link" aria-label="Перейти на страницу поиска">
-                <svg role="img" class="nav__icon" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
+                <span class="nav__icon">
+                  <svg role="img" class="nav__icon-svg" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </span>
                 Поиск</a>
             </li>
             <li class="nav__item nav__item--cart">
               <a href="" class="nav__link" aria-label="Перейти в корзину">
-                <svg role="img" class="nav__icon" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
+                <span class="nav__icon">
+                  <svg role="img" class="nav__icon-svg" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </span>
                 Корзина: пока пуста</a>
             </li>
           </ul>
@@ -52,13 +56,13 @@
     </header>
     <main class="main">
       <div class="main__header main__header--index">
-        <div class="main__promo">
-          <ul class="main__promo-nav">
-            <li class="main__promo-item">
-              <a href="" class="main__promo-link">Новые поступления</a>
+        <div class="main__sales">
+          <ul class="main__sales-nav">
+            <li class="main__sales-item">
+              <a href="" class="main__sales-link">Новые поступления</a>
             </li>
-            <li class="main__promo-item">
-              <a href="" class="main__promo-link">Распродажа</a>
+            <li class="main__sales-item">
+              <a href="" class="main__sales-link">Распродажа</a>
             </li>
           </ul>
           <span class="main__marketing">Бесплатная доставка по России</span>
@@ -159,7 +163,7 @@
             <h3 class="contacts__title title">Контакты</h3>
             <div class="contacts__info">
               <div class="contacts__item">
-                <span class="contacts__type">e-mail:</span>
+                <span class="contacts__type">e&nbsp;-&nbsp;mail:</span>
                 <a class="contacts__value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </div>
               <div class="contacts__item">
@@ -169,6 +173,7 @@
             </div>
           </div>
           <div class="contacts__map">
+            <div class="contacts__map-yandex" id="map"></div>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -219,25 +224,26 @@
           </a>
         </div>
     </footer>
-    <div class="background">
-      <section class="popup popup--to-cart">
-          <form class="popup__form" action="https://echo.htmlacademy.ru/" method="push">
-            <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
-            <fieldset class="popup__fieldset">
-              <legend class="popup__legend">Выберете размер:</legend>
-              <div class="popup__buttons">
-                <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
-                <label class="popup__label" for="small">s</label>
-                <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
-                <label class="popup__label" for="middle">m</label>
-                <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
-                <label class="popup__label" for="large">l</label>
-              </div>
-            </fieldset>
-            <button type="submit" class="popup__submit button">Добавить</button>
-          </form>
-      </section>
-      </div>
+    <div class="overlay"></div>
+    <section class="popup popup--to-cart">
+        <form class="popup__form" action="https://echo.htmlacademy.ru/" method="push">
+          <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+          <fieldset class="popup__fieldset">
+            <legend class="popup__legend">Выберете размер:</legend>
+            <div class="popup__buttons">
+              <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+              <label class="popup__label" for="small">s</label>
+              <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+              <label class="popup__label" for="middle">m</label>
+              <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+              <label class="popup__label" for="large">l</label>
+            </div>
+          </fieldset>
+          <button type="submit" class="popup__submit button">Добавить</button>
+        </form>
+    </section>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<bd59c1c5-2aca-4d1a-b32f-d335413864f1>&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="js/mishka.js"></script>
   </body>
 </html>

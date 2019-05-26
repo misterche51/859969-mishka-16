@@ -6,8 +6,8 @@
     <title>MISHKA - каталог</title>
     <script defer src="js/picturefill.min.js"></script>
     <script defer src="js/svgxuse.min.js"></script>
-    <link rel="preload" href="opensans.woff2" as="font">
-    <link rel="preload" href="opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -52,13 +52,13 @@
       </header>
     <main class="main">
         <div class="main__header">
-            <div class="main__promo">
-              <ul class="main__promo-nav">
-                <li class="main__promo-item">
-                  <a href="" class="main__promo-link">Новые поступления</a>
+            <div class="main__sales">
+              <ul class="main__sales-nav">
+                <li class="main__sales-item">
+                  <a href="" class="main__sales-link">Новые поступления</a>
                 </li>
-                <li class="main__promo-item">
-                  <a href="" class="main__promo-link">Распродажа</a>
+                <li class="main__sales-item">
+                  <a href="" class="main__sales-link">Распродажа</a>
                 </li>
               </ul>
               <span class="main__marketing">Бесплатная доставка по России</span>
@@ -214,25 +214,24 @@
           </a>
         </div>
     </footer>
-    <div class="background">
-      <section class="popup popup--to-cart">
-        <form class="popup__form">
-          <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
-          <fieldset class="popup__fieldset">
-            <legend class="popup__legend">Выберете размер:</legend>
-            <div class="popup__buttons">
-              <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
-              <label class="popup__label" for="small">s</label>
-              <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
-              <label class="popup__label" for="middle">m</label>
-              <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
-              <label class="popup__label" for="large">l</label>
-            </div>
-          </fieldset>
-          <button type="submit" class="popup__submit button">Добавить</button>
-        </form>
-      </section>
-    </div>
+    <div class="overlay"></div>
+    <section class="popup popup--to-cart">
+      <form class="popup__form" action="https://echo.htmlacademy.ru/" method="push">
+        <h3 class="popup__title title">Добавить в&nbsp;корзину</h3>
+        <fieldset class="popup__fieldset">
+          <legend class="popup__legend">Выберете размер:</legend>
+          <div class="popup__buttons">
+            <input type="radio" class="popup__input visually-hidden" id="small" name="size" value="small" checked>
+            <label class="popup__label" for="small">s</label>
+            <input type="radio" class="popup__input visually-hidden" id="middle" name="size" value="middle">
+            <label class="popup__label" for="middle">m</label>
+            <input type="radio" class="popup__input visually-hidden" id="large" name="size" value="large">
+            <label class="popup__label" for="large">l</label>
+          </div>
+        </fieldset>
+        <button type="submit" class="popup__submit button">Добавить</button>
+      </form>
+    </section>
   <script src="js/mishka.js"></script>
   </body>
 </html>

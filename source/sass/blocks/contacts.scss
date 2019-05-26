@@ -39,6 +39,7 @@
 
 .contacts__type {
   color: $content-main-color;
+  flex-shrink: 0;
   margin-right: 30px;
 }
 
@@ -67,11 +68,22 @@
 .contacts__map {
   margin: 0 -30px;
   margin-top: 35px;
+  position: relative;
+}
+
+.contacts__map-yandex {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .contacts__map img {
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 .contacts__button {

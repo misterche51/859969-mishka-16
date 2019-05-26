@@ -93,12 +93,15 @@
 .nav__icon {
   margin-left: -44px;
   margin-right: 26px;
-  fill: $decorative-lines-color;
 }
 
-.nav__link:hover > .nav__icon,
-.nav__link:focus > .nav__icon {
-  fill: $decorative-elements-color;
+.nav__icon svg {
+  fill: currentColor;
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:focus .nav__icon {
+  color: $decorative-elements-color;
 }
 
 .nav__item {

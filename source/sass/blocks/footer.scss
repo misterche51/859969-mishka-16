@@ -82,12 +82,12 @@
 }
 
 .footer__copyright-logo {
-  fill: $decorative-elements-color;
+  fill: currentColor;
   margin-left: 30px;
 }
 
-.footer__copyright-link:hover .footer__copyright-logo {
-  fill: $categories-second-color;
+.footer__copyright-link:hover .footer__copyright-wrap {
+  color: $categories-second-color;
 }
 
 .footer__copyright-link:active {
@@ -129,10 +129,7 @@
   .footer__social {
     border: none;
     padding-top: 10px;
-  }
-
-  .footer__social-item:first-child {
-    margin-left: 80px;
+    padding-left: 45px;
   }
 
   .footer__copyright-link {

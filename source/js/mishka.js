@@ -1,35 +1,37 @@
 var buy = document.querySelector(".promo__buy");
 var buyCatalogVideo = document.querySelector(".catalog__video-button");
 var buyCatalogCart = document.querySelectorAll(".catalog__item-cart-link");
-var background = document.querySelector(".background");
+var overlay = document.querySelector(".overlay");
 var popup = document.querySelector(".popup");
 var form = popup.querySelector("form");
 
 if (buy !== null) {
   buy.addEventListener("click", onPopupShow);
-} if (buyCatalogVideo !== null) {
+}
+
+if (buyCatalogVideo !== null) {
   buyCatalogVideo.addEventListener("click", onPopupShow);
-} if (buyCatalogCart !== null) {
+}
+
+if (buyCatalogCart !== null) {
   for (var i = 0; i < buyCatalogCart.length; i++) {
     buyCatalogCart[i].addEventListener('click', onPopupShow);
   }
 }
 
-background.addEventListener("click", onPopupClose);
+overlay.addEventListener("click", onPopupClose);
+window.addEventListener("keydown", onPopupEscapePress);
 
 function onPopupShow(evt) {
   evt.preventDefault();
   popup.classList.add("popup--show");
-  background.classList.add("background--active");
-  window.addEventListener("keydown", onPopupEscapePress);
+  overlay.classList.add("overlay--active");
 }
 
 function onPopupClose(evt) {
   evt.preventDefault();
-  if (!popup.contains(event.target)) {
   popup.classList.remove("popup--show");
-  background.classList.remove("background--active");
-  }
+  overlay.classList.remove("overlay--active");
 }
 
 function onPopupEscapePress(evt) {
@@ -38,7 +40,6 @@ function onPopupEscapePress(evt) {
     document.removeEventListener("keydown", onPopupEscapePress);
   }
 }
-
 
 var menuBtn = document.querySelector(".nav__toggle-button");
 var menuListServ = document.querySelector(".nav__list--services");
@@ -58,3 +59,18 @@ function menuShow(evt) {
   menuListUser.classList.toggle("nav__list--opened");
   menuBtn.classList.toggle("nav__toggle-button--close");
 }
+
+ymaps.ready(function () {
+  var map = new ymaps.Map("map", {
+    center: [59.938631, 30.323055],
+    zoom: 20,
+    controls: ["zoomControl","searchControl"]
+  });
+  pointer = new ymaps.Placemark(map.getCenter(), {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/icon-map-pin.svg',
+    iconImageSize: [67,100],
+    iconOffset: [15,0]
+  });
+  map.geoObjects.add(pointer);
+});
