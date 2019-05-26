@@ -4,6 +4,7 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "del": "^4.1.1",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "^2.26.5",
@@ -46,7 +47,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1",
+    "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "svgxuse": "^1.2.6"
   }

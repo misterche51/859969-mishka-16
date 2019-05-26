@@ -82,7 +82,6 @@ gulp.task("copy", function(){
     "source/img/**",
     "source/js/**",
     "source/*.html",
-    "source/css/normalize.css"
   ],{
     base: "source"
   })
