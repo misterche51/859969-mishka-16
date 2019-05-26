@@ -1,8 +1,6 @@
 {
   "extends": "stylelint-config-htmlacademy",
-  "ignoreFiles": "source/js/*min.js",
   "rules": {
-    "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "declaration-no-important": true
   }
 }
