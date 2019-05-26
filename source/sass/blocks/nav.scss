@@ -27,18 +27,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.nav__toggle-button--open {
   width: 20px;
   height: 15px;
-  background-image: url("../img/icon-menu-open.svg");
-}
-
-.nav__toggle-button--close {
-  width: 20px;
-  height: 21px;
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/icons/icon-menu-open.svg");
 }
 
 .nav__list {
@@ -53,7 +44,7 @@
   outline: none;
   text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
   height: 100%;
@@ -72,20 +63,24 @@
 }
 
 .nav__icon {
+  display: inline-block;
   margin-left: -44px;
   margin-right: 26px;
-  fill: $decorative-lines-color;
 }
 
-.nav__link:hover > .nav__icon,
-.nav__link:focus > .nav__icon {
-  fill: $decorative-elements-color;
+.nav__icon svg {
+  fill: currentColor;
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:focus .nav__icon {
+  color: $decorative-elements-color;
 }
 
 .nav__item {
   text-decoration: none;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
   height: 79px;
@@ -114,7 +109,7 @@
     height: 100%;
     justify-content: flex-start;
     margin-right: auto;
-    width: 50%;
+    width: 48%;
   }
 
   .nav__logo img {
@@ -129,7 +124,7 @@
   .nav__list {
     min-height: 88px;
     flex-direction: row;
-    width: 50%;
+    width: 52%;
   }
 
   .nav__list--services {
@@ -140,7 +135,7 @@
 
   @media (max-width: 1124px) {
     .nav__list--services .nav__link {
-      font-size: 15px;
+      font-size: $fs-small;
       line-height: 1.6;
       padding-top: 20px;
     }
@@ -176,8 +171,7 @@
   }
 
   .nav__item--search .nav__icon {
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 33px;
   }
 
   .nav__item--cart {
@@ -200,7 +194,7 @@
   }
 
   .nav__logo img {
-    width: 149px;
+    width: 170px;
   }
 
   .nav__logo-link {
@@ -235,5 +229,33 @@
   .nav__list--user {
     margin-left: auto;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav--no-js {
+    .nav__toggle-button {
+      display: none;
+    }
+
+    .nav__list {
+      display: flex;
+    }
+  }
+
+  .nav--opened {
+    .nav__toggle-button {
+      width: 20px;
+      height: 21px;
+      background-image: url("../img/icons/icon-menu-close.svg");
+    }
+
+    .nav__list {
+      display: flex;
+    }
   }
 }

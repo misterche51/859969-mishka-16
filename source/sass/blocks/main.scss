@@ -4,7 +4,8 @@
 }
 
 .main__header {
-  background-color: $background-fill-color;
+  box-sizing: border-box;
+  background-color: $background-fill-decorative-color;
   min-height: 177px;
   width: 100%;
   display: flex;
@@ -16,7 +17,7 @@
 .main__header--index {
   background-color: $background-index-header-color;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center top;
+  background-position: center -10px;
   background-repeat: no-repeat;
   background-size: 575px auto;
 
@@ -29,40 +30,40 @@
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
   text-align: center;
   line-height: 1.11;
-  padding: 65px 35px 80px 35px;
+  padding: 70px 35px 78px 35px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     font-size: 27px;
   }
 }
 
 .main__header--index .main__title {
-  padding: 86px 38px 130px 38px;
+  padding-bottom: 125px;
 }
 
-.main__promo {
+.main__sales {
   width: 100%;
   padding: 0 50px;
   display: none;
 }
 
-.main__promo-nav {
+.main__sales-nav {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 50%;
 }
 
-.main__promo-item {
+.main__sales-item {
   width: 50%;
 }
 
-.main__promo-link {
+.main__sales-link {
   display: block;
   height: 100%;
   width: 100%;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.4;
   color: $heading-color;
 
@@ -94,7 +95,7 @@
   .main__header::after {
     position: absolute;
     content: "";
-    bottom: -12px;
+    bottom: -8px;
     width: 100%;
     height: 24px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -115,19 +116,19 @@
 
   .main__title {
     width: 100%;
-    padding-top: 45px;
+    padding-top: 28px;
     padding-bottom: 75px;
   }
 
   .main__header--index .main__title {
-    padding: 130px 135px 370px 135px;
+    padding: 90px 135px 375px 135px;
   }
 
-  .main__promo {
+  .main__sales {
     @include centering;
 
 
-    font-size: 15px;
+    font-size: $fs-small;
     line-height: 1.6;
     min-height: 66px;
     display: flex;
@@ -136,12 +137,13 @@
     align-items: center;
   }
 
-  .main__promo-nav {
+  .main__sales-nav {
     display: none;
   }
 
   .main__marketing {
     margin-left: auto;
+    margin-top: -6px;
   }
 }
 
@@ -151,8 +153,9 @@
   }
 
   .main__header::after {
-    bottom: -17px;
-    height: 34px;
+    background-size: 1250px 37px;
+    bottom: -15px;
+    height: 37px;
   }
 
   .main__header--index {
@@ -166,26 +169,39 @@
 
   .main__title {
     width: 100%;
-    padding-top: 55px;
-    padding-bottom: 110px;
+    padding-top: 25px;
+    padding-bottom: 105px;
   }
 
   .main__header--index .main__title {
-    padding: 110px 250px 330px 250px;
+    padding: 85px 250px 358px 250px;
   }
 
-  .main__promo-nav {
+  .main-promo {
+    min-height: 59px;
+  }
+
+  .main__sales-nav {
     display: flex;
     flex-direction: row;
   }
 
-  .main__promo-item {
-    padding: 0;
-    width: 33.3%;
-    min-width: 185px;
+  .main__sales-item {
+    padding: 0 10px 0 33px;
+    width: auto;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
-  .main__promo-item:not(:first-child) {
+  .main__sales-item:not(:first-child) {
     text-align: center;
+    padding-left: 55px;
+  }
+
+  .main__sales-link {
+    font-size: $fs-small;
+    margin-top: -5px;
   }
 }

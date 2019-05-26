@@ -7,20 +7,20 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-size: 17px;
-  line-height: 1.17;
+  font-size: $fs-middle;
+  line-height: 1.3;
   color: $content-main-color;
-  padding: 20px 41px;
+  padding: 15px 41px;
   box-shadow: inset 0 0 0 2px $content-main-color;
 
   &:hover,
   &:focus {
-    color: white;
+    color: $background-fill-color;
     background-color: $content-main-color;
   }
 
   &:active {
-    color: rgba($color: white, $alpha: 0.3);
+    color: rgba($color: $background-fill-color, $alpha: 0.3);
     background-color: $content-main-color;
   }
 }

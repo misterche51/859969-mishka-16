@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 65px;
+  padding-top: 58px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -13,12 +13,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .reviews__item {
-  font-size: 15px;
+  font-size: $fs-small;
   line-height: 2;
 }
 
@@ -31,7 +31,7 @@
   margin: 0;
   padding: 0;
   font-family: "OpenSansBold", "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: $fs-middle;
   line-height: 1.17;
   color: $heading-color;
   min-height: 50px;
@@ -39,10 +39,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 35px;
-}
-
-.reviews__author-name {
-  margin-bottom: 15px;
 }
 
 .reviews__author-link {
@@ -82,18 +78,13 @@
 }
 
 .reviews__change-button--back {
-  background-image: url("../img/icon-left-arrow.svg");
   border-right: 1px solid $decorative-lines-color;
-}
-
-.reviews__change-button--forward {
-  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 85px;
-    padding-bottom: 140px;
+    padding-top: 80px;
+    padding-bottom: 135px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
@@ -114,13 +105,13 @@
   }
 
   .reviews__list {
-    margin-top: 60px;
-    margin-bottom: 65px;
+    padding-top: 45px;
+    padding-bottom: 65px;
     order: 2;
   }
 
   .reviews__item {
-    font-size: 17px;
+    font-size: $fs-middle;
     line-height: 1.76;
   }
 
@@ -166,7 +157,10 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include centering;
+
     background-position: 50px 0;
+    padding-top: 70px;
+    padding-bottom: 185px;
   }
 
   .reviews::after {
@@ -177,14 +171,28 @@
     @include centering;
 
     margin: 0;
-    padding-left: 150px;
+    padding-left: 170px;
+  }
+
+  .reviews__list {
+    padding: 40px 100px 35px 5px;
+  }
+
+  .reviews__author-name {
+    padding-bottom: 5px;
+  }
+
+  .reviews__item {
+    line-height: 1.86;
   }
 
   .reviews__button {
     width: 16.6%;
+    margin-top: 10px;
   }
 
   .reviews__change {
+    padding-top: 13px;
     width: 16.6%;
   }
 }

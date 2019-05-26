@@ -1,4 +1,5 @@
 
+@import "../../node_modules/normalize.css/normalize";
 @import "variables.scss";
 @import "fonts.scss";
 @import "scaffolding.scss";
@@ -17,4 +18,5 @@
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/form.scss";
+@import "blocks/overlay.scss";
 @import "blocks/popup.scss";
